@@ -217,5 +217,5 @@ def NLPCrawler3(pdf_file_path):
 
 
 if __name__ == '__main__':
-    pdf_file_path = '/Users/hyacinth/program/pdf2word/pdf2word/pdf'  # 指定目标文件夹（确定已有该文件夹）
+    pdf_file_path = 'D:\\nlp_pdf'  # 指定目标文件夹（确定已有该文件夹）
     NLPCrawler3(pdf_file_path)
