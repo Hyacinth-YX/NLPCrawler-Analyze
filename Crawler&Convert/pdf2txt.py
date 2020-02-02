@@ -3,6 +3,7 @@ import sys
 import importlib
 from concurrent.futures import ProcessPoolExecutor
 import os
+import re
 
 from pdfminer.pdfparser import PDFParser
 from pdfminer.pdfdocument import PDFDocument
@@ -14,6 +15,31 @@ from pdfminer.pdfpage import PDFPage
 
 importlib.reload(sys)
 
+
+PREP_AND_ART_RE = [r'\b a\b', r'\b an\b', r'\b the\b', r'\b in\b', r'\b on\b', r'\b with\b',
+                   r'\b by\b', r'\b for\b', r'\b at\b', r'\b about\b', r'\b under\b', r'\b of\b',
+                   r'\b into\b', r'\b within\b', r'\b throughout\b', r'\b inside\b',
+                   r'\b outside\b', r'\b without\b'] #标题中这些词语会小写
+
+prep_art_pattern = re.compile('|'.join(PREP_AND_ART_RE))
+
+
+def content_filter(content):
+    '''
+    删除每一个自然段多出来的换行符，转化特定的行
+    TODO: 改进对列表（制表符）的转化，改进对公式的转化
+    :param content: 待转化的自然段
+    :return: perfect_content 转换好的自然段，结尾是一个换行符
+    '''
+    perfect_content = ''
+    for row in content.split ('\n'):
+        tmp_row = re.sub(prep_art_pattern, '', row)
+        if tmp_row.istitle() or tmp_row.isupper():
+            row += '\n' # 如果这一行是标题（大写字母开头）或者全大写，保留他的换行
+        else:
+            row += ' '
+        perfect_content += row
+    return perfect_content
 
 
 def pdf_to_txt(pdf_file_path,txt_file_path):
@@ -44,7 +70,9 @@ def pdf_to_txt(pdf_file_path,txt_file_path):
                 if (isinstance(x, LTTextBoxHorizontal)):
                     with open(txt_file_path,'a') as f:
                         content = x.get_text ()
-                        f.write(content + '\n')
+                        perfect_content = content_filter(content)# perfect_content是一个以换行结尾的自然段
+                        f.write(perfect_content + '\n')# 多加一个换行所以每个自然段之间有两个换行符
+        print('finished')
 
 
 def convert_all_pdfs(fold_path,dest_fold_path):
@@ -74,6 +102,11 @@ def convert_all_pdfs(fold_path,dest_fold_path):
 max_workers = 3
 
 if __name__ == '__main__':
+    '''
     fold_path = '/Users/hyacinth/program/pdf2word/pdf2word/pdf'
     dest_fold_path = '/Users/hyacinth/program/pdf2word/pdf2word/txt'
     convert_all_pdfs(fold_path, dest_fold_path)
+    '''
+    # test code
+    pdf_to_txt('/Users/hyacinth/program/pdf2word/pdf2word/pdf/J19-1001.pdf',
+               '/Users/hyacinth/program/pdf2word/pdf2word/txt/J19-1001.txt')

@@ -9,6 +9,7 @@ import re
 import threading
 socket.setdefaulttimeout(30)
 ssl._create_default_https_context = ssl._create_unverified_context
+
 class Connection:
 
 	default_config = {
@@ -208,7 +209,7 @@ class MultiConnections:
 
 		self.connections= dict([idx,connections[idx]] for idx in range(len(connections)))
 
-		self.threads = dict([idx,MultiConnections.async(connections[idx])] for idx in range(len(connections)))
+		self.threads = dict([idx,MultiConnections.Async(connections[idx])] for idx in range(len(connections)))
 
 		self.n_jobs = n_jobs
 
@@ -264,7 +265,7 @@ class MultiConnections:
 			return [conn.response for conn in self.connections.values()]
 
 	@staticmethod
-	def async(connection : Connection):
+	def Async(connection : Connection):
 
 		thread = threading.Thread(target=connection.get)
 
@@ -290,8 +291,6 @@ class schedule:
 
 	@staticmethod
 	def getIndexUrlListOfVenue(venue):
-
-
 		'''
 		获得需要下载的pdf的所有url
 		:return: urlList (list)
