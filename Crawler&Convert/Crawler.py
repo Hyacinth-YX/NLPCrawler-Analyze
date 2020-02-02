@@ -1,6 +1,7 @@
 import requests
 import requests.exceptions as ERRORS
 import time
+import pandas as pd
 import socket
 import ssl
 import random
@@ -13,31 +14,34 @@ class Connection:
 	default_config = {
 		"timeout": 15,
 
-		"max_retry": 3
+		"stream" : False
+
 	}
 
 	def __init__(self,**kwargs):
 
+		self._config = Connection.default_config.copy()
 
-		self.__dict__["config"] = Connection.default_config.copy()
+		self._config.update(kwargs)
 
-		self.config.update(kwargs)
+		self.max_retry = 3
 
 		self.status = "Ready"
 
-	def __setattr__(self, key, value):
-
-		self.config[key] = value
 
 	def __getattr__(self, item):
 
-		return self.config[item]
+		if item == "config":
+
+			return  self._config
+
+		return self._config[item]
 
 	def __str__(self):
 
 		return "[con]" + str(self.url)
 
-	def get(self):
+	def get(self,**kwargs):
 		'''
 		通过url伪装用户请求网页内容，如果失败再尝试一次，仍然失败则返回False
 		:param url: url地址 （string）
@@ -50,34 +54,50 @@ class Connection:
 
 		self.status = "Connecting"
 
-		for idx in range(self.max_retry):
+		if self.stream == True:
 
-			try:
+			html = requests.get(self.url, headers=Connection.get_header(), proxies=Connection.get_proxy(),
+								stream=self.stream, **kwargs)
 
-				#print(self.url + u' loading %s time...'%idx)
-
-				html = requests.get(self.url, headers=Connection.get_header(),proxies = Connection.get_proxy(),timeout=self.timeout)
-
-				html.encoding = "utf-8"
-
-				self.response =  html.text
-
-				self.status = "Finish"
-
-				return True
-
-			except:
+			self.response = StreamObj()
 
 
-				pass
-				#print(e)
+			for chunk in html.iter_content(1000):
+
+				self.response += chunk
+
+				self.status = "downloading:" + self.response.size
+
+			self.status = "Finish"
+
+			return True
 
 		else:
-				#print(self.url + u' loading false...')
 
-				self.status = "Error"
+			for idx in range(self.max_retry):
 
-				return False
+				try:
+					html = requests.get(self.url, headers=Connection.get_header(), proxies=Connection.get_proxy(),
+										stream=self.stream, **kwargs)
+
+					html.encoding = "utf-8"
+
+					self.response =  html.text
+
+					self.status = "Finish"
+
+					return True
+
+				except:
+
+					import traceback
+
+					print(traceback.format_exc())
+
+			else:
+					self.status = "Error"
+
+					return False
 
 	@staticmethod
 	def get_proxy():
@@ -122,12 +142,69 @@ class Connection:
 		}
 		return headers
 
+class StreamObj:
 
+	def __init__(self):
+
+		self.content = b''
+
+	def append(self,other):
+
+		self.content += other
+
+	def __add__(self, other : bytes):
+
+		self.content += other
+
+		return  self
+
+	@property
+	def size(self):
+
+		Kilobyte = self.bytesize / 1024
+
+		Megabyte = self.bytesize  / 1024 ** 2
+
+		if Megabyte > 10:
+
+			BYTES_flag = str(round(Megabyte, 2)) + " MB"
+
+		elif Kilobyte > 1:
+
+			BYTES_flag = str(round(Kilobyte, 2)) + " KB"
+
+		else:
+
+			BYTES_flag = str(self.bytesize ) + " B"
+
+		return BYTES_flag
+
+	@property
+	def bytesize(self,str = False):
+
+		return len(self.content)
+
+	def to_file(self,path):
+
+		with open(path,'wb') as f:
+
+			f.write(self.content)
+
+	def __str__(self):
+
+		return "<StreamObj>:" + self.size
 
 class MultiConnections:
 
-	def __init__(self,connections,n_jobs = 5):
+	def __init__(self,connections,n_jobs = 5 , type = "promise" ):
 
+		'''
+
+		:param connections:
+		:param n_jobs:
+		:param type: str promise or generator
+		'''
+		self.type = type
 
 		self.connections= dict([idx,connections[idx]] for idx in range(len(connections)))
 
@@ -160,7 +237,7 @@ class MultiConnections:
 
 			for process in now_processes:
 
-				message += "[conn_{:>2d}]".format(process[0])
+				message += "[{:>2d}_{:<11s}]".format(process[0],process[1].status)
 
 				if process[1].status == "Finish":
 
@@ -168,13 +245,13 @@ class MultiConnections:
 
 					now_processes.remove(process)
 
+					if self.type == "generator":
+
+						yield process[1]
+
 				elif process[1].status == "Error":
 
 					left_threads_idx.append(process[0])
-
-			for i in range(self.n_jobs - len(now_processes)):
-
-				message += "[conn_{:>2s}]".format("")
 
 			message += " || {} finish / {} Total".format(finish_count,len(self.threads))
 
@@ -182,7 +259,9 @@ class MultiConnections:
 
 			print(message,end = "",flush= True)
 
-		return [conn.response for conn in self.connections.values()]
+		if self.type == "promise":
+
+			return [conn.response for conn in self.connections.values()]
 
 	@staticmethod
 	def async(connection : Connection):
@@ -192,6 +271,7 @@ class MultiConnections:
 		thread.name = str(connection)
 
 		return thread
+
 class schedule:
 
 	root_url = 'http://www.aclweb.org'  # 根网址
@@ -205,6 +285,8 @@ class schedule:
 	timeout = 15
 
 	max_retry = 3
+
+	dataUrl = "data/"
 
 	@staticmethod
 	def getIndexUrlListOfVenue(venue):
@@ -241,7 +323,7 @@ class schedule:
 		return eventsUrl
 
 	@staticmethod
-	def ParsePdfUrl(html):
+	def parsePdfUrl(html):
 
 		pattern = r'https://www.aclweb.org/anthology/\w{3}-\d*\.pdf'
 
@@ -270,28 +352,53 @@ class schedule:
 
 		res = multi.start()
 
-		pdfUrls = list(map(schedule.ParsePdfUrl, res))
+		pdfUrls = list(map(schedule.parsePdfUrl, res))
 
 		results = dict([years[i],pdfUrls[i]] for i in  range(len(years)))
 
 		return results
 
-results = { "year": [],"venue":[],"url" :[] }
+	@staticmethod
+	def getAllpdfUrlsOfAllVenus():
 
-for venue in schedule.venues:
+		results = { "year": [],"venue":[],"url" :[] }
 
-	print("\n",venue)
+		for venue in schedule.venues:
 
-	pdfUrls = schedule.getPdfUrlsOfVenue(venue)
+			print("\n",venue)
 
-	for year,pdfurls in pdfUrls.items():
+			pdfUrls = schedule.getPdfUrlsOfVenue(venue)
 
-		results["year"] += [year] * len(pdfurls)
+			for year,pdfurls in pdfUrls.items():
 
-		results["venue"] += [venue] * len(pdfurls)
+				results["year"] += [year] * len(pdfurls)
 
-		results["url"] += pdfurls
+				results["venue"] += [venue] * len(pdfurls)
 
-	import pandas as pd
+				results["url"] += pdfurls
 
-pd.DataFrame(results).to_csv("results.csv",encoding= "utf-8")
+		pd.DataFrame(results).to_csv("results.csv",encoding= "utf-8")
+
+	@staticmethod
+	def downLoadAllpdfs(urls : list):
+
+		connections = list(map(lambda url: Connection(url=url, stream=True), urls))
+
+		multi = MultiConnections(connections, n_jobs=5, type="generator")
+
+		for finished_connection in multi.start():
+
+			url = finished_connection.url
+
+			name = url.split("/")[-1]
+
+			finished_connection.response.to_file(schedule.dataUrl + name)
+
+			print("\nFinish : ", name , "({})".format(finished_connection.response.size))
+
+
+if __name__ == "__main__":
+
+	urls = pd.read_csv("pdfURLs.csv")["url"].values[:10]
+
+	schedule.downLoadAllpdfs(urls)
