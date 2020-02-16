@@ -418,4 +418,7 @@ if __name__ == "__main__":
 
 	#schedule.downLoadAllpdfs(urls)
 
+	import re
+
+	print(re.search(r'\[[\w]*\]',"[22]").span())
 	pass

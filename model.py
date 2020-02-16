@@ -8,21 +8,31 @@ tokenizer = bert.BertTokenizer.from_pretrained(bert_model_dir)
 
 bert = bert.BertModel.from_pretrained(bert_model_dir )
 
-with open("Corpus/3D技术的前世今生.txt",encoding="utf-8") as f:
+seqs = "DocSequences/"
 
-	s = f.read()
+import os
 
-print(s)
+import json
 
-tokens = tokenizer.tokenize(s)
+files =os.listdir(seqs)
 
-print(tokens)
+for idx,file in enumerate(files):
 
-ids = torch.tensor([tokenizer.convert_tokens_to_ids(tokens)])
+	print("\r",idx,len(files),file,end = "",flush=True)
 
-print(ids)
+	with open(seqs + file,encoding="utf-8") as f:
 
-result = bert(ids, output_all_encoded_layers=False)
+		seqs = json.loads(f.read())
 
 
-print(result)
+	for i in range(100000):
+
+		if i * 50 > len(seqs):
+
+			break
+
+		ids = torch.tensor([tokenizer.convert_tokens_to_ids(seqs[i * 50 : min((i + 1) * 50,len(seqs))])])
+
+		result = bert(ids, output_all_encoded_layers=False)
+
+

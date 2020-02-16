@@ -37,6 +37,6 @@ for idx,file in enumerate(files):
 
 	ids = torch.tensor([tokenizer.convert_tokens_to_ids(tokens)])
 
-	with open("DocSequences/{}.json".format(file[:-4]),"w",encoding="utf-8") as f:
+	with open("DocSequences/[{}]{}.json".format(idx + 1 ,file[:-4]),"w",encoding="utf-8") as f:
 
 		f.write(json.dumps(tokens))
