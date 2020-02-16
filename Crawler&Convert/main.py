@@ -1,6 +1,6 @@
 import sys
 
-sys.path.append("../")
+sys.path.append("./")
 
 from bs4 import  BeautifulSoup
 
@@ -67,7 +67,7 @@ def parseContent(res):
 
         content = content.replace(text,"<subtitle>{}</subtitle>".format(text))
 
-    return {"title":title,"content":content.replace(" ","").replace("\u3000","").replace("\n\n","")}
+    return {"title":title,"content":content.replace("\u3000","").replace("\n\n","")}
 
 def getContent():
 
@@ -103,9 +103,9 @@ def getContent():
 
 if __name__ == "__main__":
 
-    #getTextUrls()
+    getTextUrls()
 
-    #getContent()
+    getContent()
 
     import os
 

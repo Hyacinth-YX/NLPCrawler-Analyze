@@ -2,12 +2,846 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15e86fae-04a2-4eac-b46d-e56b19d95c33" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/NLP_PROJECT.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/NLP_PROJECT.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawler&amp;Convert/Crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawler&amp;Convert/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawler&amp;Convert/NLPCrawler3.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Crawler&amp;Convert/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawler&amp;Convert/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawler&amp;Convert/text_urls.json" beforeDir="false" afterPath="$PROJECT_DIR$/Crawler&amp;Convert/text_urls.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawler&amp;Convert/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/21世纪的神奇材料-----石墨烯及其应用.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/25年，海平面上升了约8厘米.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/270万年前冰芯，掀起远古气候演变一角.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/27年下降75%，飞行昆虫数量骤减为哪般.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/3000万光年外，一个小星系中发现超大黑洞.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/3D打印，个性化触手可及.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/3D技术的前世今生.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/3D生物打印技术.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/3亿年前，鱼儿为什么要上岸.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/7亿年前，谁让“雪球地球”解冻.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/80亿光年外，有个恒星孵化场.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/DNA也会“售后服务”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/G蛋白偶联受体：生命科学和药物研发的“宝藏”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/LAMOST为星表“提纯”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/PM2.5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/We are family！油菜&amp;板蓝根.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“不可貌相”的野生果树.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“中国鸽子树”——珙桐首次在华南植物园开花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“为破解社交识别障碍做点事”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“二师兄”教你新知识，甲减患者为什么容易贫血和免疫力差.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“似竹非竹”的竹节秋海棠.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“佛光重现”的宝塔姜.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“冷热交战”之地壳的形成.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“叶”、“花”、“香”三美俱全的掌唇兰.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“吃”钢的细菌.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“呼之即来，挥之即去”的泉水.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“土生土长”的无人机家族.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“复仇者联盟”来了——浅谈机器视觉对机器人发展变化的影响.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“大数据”如此热门，真正的源头在哪里？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“天眼”监测我国地下水变化.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“头脑特工队”真会影响决策.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“女儿国之水被破解”——利用干细胞技术实现哺乳动物同性生殖.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“嫦娥”奔月的“烦恼” 太空中存在的“腐蚀”问题.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“小黄鱼”印度洋遨游记.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“广州樱”盛开 粉红樱花季来袭.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“慧眼”独具 给宇宙来张X光“留影”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“换个角度看世界”——W100型全自主无人直升机系统.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“新视野”的新成果.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“时间魔盒”原子钟.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“明珠”“璧流离”印证海上丝路.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“永不开放的花”——垂花悬铃花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“没心没肺”的硬枝黄蝉.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“洞察”号们这样带你看火星.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“源于中国”：丝绸之路上的创新符号.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“潜龙三号” 你是一个怎样的“深潜明星”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“火辣辣”的辣木.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“牛郎”“织女”：渐行渐远爱依旧.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“玉拖”麻栗坡兜兰.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“球球”开花赛个春——多彩的球根花卉.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“甜蜜”的困扰——糖尿病能被彻底治愈吗.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“生物黑客”入侵植物.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“神奇”的酵素真的很神吗.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“科学”号从西太平洋带回了啥.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“科学”号的“七种武器”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“科学”号科考船为何探秘卡罗琳海山？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“第八大洲”并不是新发现，发现新“大陆”很正常.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“粽”情端午 心系“龙船”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“绿色化工厂”引人期待.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“美猴王”你到底是啥“猴”？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“臭味相投”铁树与甲虫之爱万古不变.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“萤火虫之约”引发环境思考.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“蝶”舞枝头的羊蹄甲.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“褐家鼠”的环球旅行始于东亚南部.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“试管刷”的艺术人生.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“野鸡”的那些事儿.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“量子”计算改变我们的生活.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“青蛙皮”——你敢吃吗？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/“龙江双星”合璧 “宇宙洪荒”探秘.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/一个“小杯子”的发育承载了光明的驶来.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/一个波罗蜜，N个小核果.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/一卉香一室的茉莉花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/一年一度秋风劲，绿叶缘何变黄叶.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/一花开一日——灰莉.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/一起来看加长版月全食.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/万万没想到：植物是这样防止被吃的.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/三分钟了解天宫二号上的黑科技.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/三角梅.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/上帝种的茶.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/不一样的马钱叶羊蹄甲.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/不会结疤的大蹼铃蟾.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/不可触碰的美——海杧果.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/不含色素的美瞳，是怎么做到的？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/不断丰富史前文化遗产.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/不结相思豆的相思树.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/不老的传说——南非帝王花风情.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/不靠精子和卵子，哺乳动物也能繁育下一代了？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/与世纪曙猿并存的早期类人猿类——垣曲盆地的曙猿科其它成员.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/世界三大饮料植物——小果咖啡.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/世界上最轻的固体——气凝胶.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/世纪重大发现：引力波与爱因斯坦的完美拥抱.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/丝路天文：阿拉伯天文学在中国.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/两种微生物并肩作战 让生物光伏系统发电能力创新高.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/个性化药物，使治疗更精准.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/中国“慧眼”仰望星空.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/中国北方家鸡的驯化之谜.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/中国城市的昨天、今天、明天.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/中国天眼天问：宋朝客星与脉冲星的前世今生.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/中国洁牙的前世今生.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/中国特有树种檫木花开昆明植物园.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/中国科学家尝试到月球背面探索宇宙“黎明时代”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/中子散射——探索微观世界的奥妙.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/中微子告诉你地球内部热量的秘密.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/中微子振荡：谁先洞察到了物质效应的玄机？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/中生代湖泊革命 让“小不点”昆虫找到快乐家园.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/中秋夜天外飞来一颗火流星 别只是看个热闹.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/中药也有“身份证”？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/串串鞭炮迎佳节.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/丹霞地貌——身披彩霞的艺术品.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/为了您的造血干细胞，还是放下酒杯吧  科学过年.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/为了生存，动物开启了“熬夜”模式.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/为什么日子越过越长？天文学家这样说.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/为什么需要一个3D打印卵巢？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/为何卢浮宫博物馆地下有台粒子加速器？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/丽江高山植物园的杜鹃开花了——巍巍玉龙山，浓浓杜鹃情.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/乌蔹莓、五叶地锦及绞股蓝，傻傻分不清.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/乙肝病毒：小小病毒，大大危害.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/云南的珍稀濒危保护植物.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/五彩缤纷的小鸟——金嘴蝎尾蕉.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/五颜六色的土壤.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/亚热带地区野外采样中常见的4种危害性动物.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/亦药亦毒红豆杉.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/亭亭玉立——疣柄魔芋观果正当时.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/亮绿圆尖藓孢子体发现过程小记.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/亲手种一株“遗落凡间的小精灵”非洲堇.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/人工智能带给各行业的冲击和机遇.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/人工树叶——把太阳能装进汽车油箱.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/人类遗传资源是无价之宝.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/人马座星流 有了第一张3D画像.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/今夏台风一个接一个，你可知道“中华慧眼”每隔15分钟给它们做个CT？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/从“嫦娥一号”到“嫦娥五号”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/从“彩虹”到光谱仪，我们聊聊检测新“利器”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/从亚洲最大抚顺西露天矿谈滑坡的危害和预防.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/从市花聊起的北京植物.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/从最新《美国膳食指南的科学报告》浅谈我国居民的营养健康.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/令人又爱又恨的臭氧.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/仪态万千美少女——短萼仪花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/仿生黑科技，这个水母机器人有点牛.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/众玉兰在辰山迎春盛放.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/优良的蜜源植物——巴拿马玫瑰.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/会“飞”的大尾鼠：鼯鼠类.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/会发光的蘑菇.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/会变色的花——鸳鸯茉莉.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/似瓜非瓜不能吃的“吊瓜树”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/似莲非莲，我有一颗浮动的心——印度荇菜.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/低头含羞形似吊钟的红花荷.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/住宅巧灭鼠（七）：保护天敌——锦蛇.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/住宅巧灭鼠（九）：保控结合善用鼬.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/住宅巧灭鼠（八）：保护天敌——鸮.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/住宅巧灭鼠：关乎家鼠的3件事.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/体重大就是胖吗？减肥减的应该是“脂”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/佛之信仰——菩提树.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/佛手掌室内盆栽的方法.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/佛教圣树——无忧树.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/佛教圣树菩提树.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/你在享受着舌尖美味，它却濒临消失.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/你想要了解的干细胞都在这.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/你所不知道的猪.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/你有多了解结核？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/你爱吃的开心果 8000年前古人就会种了.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/你的密码安全吗？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/你的聪明才智从何而来.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/你知道土壤中根瘤菌的作用吗？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/你附近有什么标识.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/使人更年轻的血液？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/倒挂的美丽——尖叶杜英.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/倒挂美人——尖叶杜英、水石榕.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/倾听地震的隐秘脚步声.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/健身还是撸串 大脑如何做出选择.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/傣药植物茴香砂仁.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/像蛋黄一样的鸡蛋花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/儿时的美好念想——薏苡.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/先有鸡，还是先有蛋？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/免疫系统不能“娇生惯养”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/全世界联合起来，抓捕“黑暗”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/全球温室效应.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/全身是宝的能源植物——乌桕.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/八宝粥到底有多少宝？请用知识展开你的想象.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/关于紫苏——你或许不全知道.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/关于航空航天你需要知道的.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/关于菊花的几个你不知道的第一.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/关注实验动物，不只抵制那么简单.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/具有宗教意义的洋红西番莲.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/典雅端庄的云南黄素馨.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/养株八仙花，给家里变个色.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/冬天的重逢——火焰木开花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/几十吨的恐龙 如何飞上枝头.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/凭什么吉祥物不能是植物？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/出生已百亿年，第一代恒星现在还好吗.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/刀叶石斛花开.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/别紧张，秘鲁50条巨缝并非末日先兆.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/别让你的爱毁了它——兰之殇.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/到青藏高原寻找啤酒酵母“祖宗”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/刷新质量下限 最小黑洞填补观测空白.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/动物世界里的“女儿国”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/动物也会言传身教吗.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/动物凶猛 请勿靠近.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/动物界的“模仿高手”——叶虫.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/动物营养如何利用生物钟爆发洪荒之力？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/化石中多出的一块骨头 告诉了我们什么.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/北极ARV.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/北极海冰快速消融与极端天气频发有联系吗.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/北极海冰精准预测，不仅仅关系气候变化.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/十个橘猫九个胖.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/十年后，我们火星见.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/半导体科技推动农业革命.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/南方佳果——桃金娘.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/南方红叶树种——枫香.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/南方菟丝子何方神圣.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/印度洋为何成为中国大洋科考前沿阵地.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/即将150岁，元素周期表仍在“添丁”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/厄尔尼诺、台湾古木与中太平洋.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/厉害了，我的梨！.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/原初黑洞几时有？线索或在宇宙起源中.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/又一个你还没亲眼见过的物种，正走向灭绝边缘！.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/双色假杜鹃，不一样的“杜鹃”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/双荚决明花开金灿灿.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/发现超大质量双黑洞有多少种办法.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/受电弓滑板材料发展小史.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/变化的木星磁场 诉说着行星的哪些奥秘.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/古墓里的蛛丝马迹改写了历史.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/古生物化石出土记.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/可酿酒的龙舌兰开花了.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/史前“空中霸主”的 婴儿期如此独特.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/史海寻踪——古代养猪趣谈.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/叶像羊蹄之甲的橙花羊蹄甲.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/叶如竹花似桃的粉花夹竹桃.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/叶片会变色的闭花木.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/叶绿体争夺战.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/各式各样的地震救援机器人.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/同样70岁，为何别人和你不同.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/名号众多的美味佳果——猕猴桃.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/名如其形——锦带花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/名字独特的大花老鸦嘴.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/名字霸气的霸王鞭.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/吐鲁番洋海墓地还有多少秘密.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/吸毒为何能让人上瘾？“自噬”的作用不可小觑.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/呆萌“乖孩子”聚众组成“花果山”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/周铉：情牵天麻 耕耘深山.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/味之山妖——木姜子.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/味如“鸡屎”食之有味，臭耶？香耶？——“异味”鸡矢藤.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/味精，真的对人体有害吗？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/味蕾上的色彩——香料.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/和你一起到白头——闭鞘姜.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/唾液的神奇新角色.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/啤酒瓶为啥大多是绿色.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/啥是猪，你心里就没个数么？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/善变女神——王莲.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/喜羊羊，你老家是哪儿的.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/四季花开不断的日日樱.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/回家，人与鸟有着诸多惊人的相似.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/国内埃博拉疫苗研发需5至10年.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/国家二级保护植物——红皮糙果茶.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/国庆节前后开花结果的国庆树.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/土壤—植物的母亲.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/土壤与气温.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/土壤微生物之间的协同进化关系.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/土壤环境污染预警员——蜗牛.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/土星的这个“草帽” 居然藏着行星形成的秘密.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/在南极冰下探测宇宙射线起源.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/在夜空中找到你的星座.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/在太空中 是怎么培养动植物的.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/在太空观望 空间天气与地球天气相遇之处.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/在小行星上找水，科学家有高招.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/在石头上栽树种草——有效土壤菌绿化法.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/在青藏高原 植物是这样活下去的.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/地球将进入小冰河期 因为太阳要变“冷美人”？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/地球最深处——马里亚纳海沟.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/地球生命史上的里程碑.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/地衣：被忽略的先锋生物.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/埃及国花齿叶睡莲盛放辰山王莲池.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/埋在沙漠里的植物故事.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/基因告诉你，食肉目的大熊猫和小熊猫为啥都喜欢吃竹子.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/基因检测，你准备好了吗.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/复杂牙齿结构助熊猫成生存竞争赢家.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/外形酷似紫色袜子的异涡虫新品种.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/夜晚开花的梭果玉蕊.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/夜深花无眠——木蝴蝶.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/大吴风草自述.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/大海中的“小强”——海洋细菌.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/大海中的“阳光使者”——浮游生物.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/大红花——朱槿.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/大约4万年前 是谁最早登上了青藏高原.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/大脑的光控开关.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/大自然里的裴波那契数列.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/天文学家眼中的日全食.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/天然香水——依兰香.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/天眼科学目标：脉冲星的观测与研究意义.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/太空微力的洪荒之力.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/太空笔.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/太空里也需要“防腐”？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/太酷了！3D打印告诉你病毒到底长什么样.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/太阳发威！爆发12年来最强耀斑，地球将遭三轮“攻击”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/头脑简单、四肢发达？错！运动员们可都是最强大脑.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/好奇，创可贴是怎么消毒的呢.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/如何“择业”？细胞也关心这问题.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/如何三步搞定蛋白质的“千变万化”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/如何保护我们身边的河流？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/如何区分那些叫“炮弹果”的植物.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/如何家庭养殖栀子花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/如何简易分辨喀斯特地区白云岩和石灰岩.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/如何衡量维生素D营养状态.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/如何诊断嗜铬细胞肿瘤和副神经节瘤.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/如毛稔般尽情绽放自己.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/妈妈再也不用担心我飞不快了.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/娇羞含笑的非洲芙蓉.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/娇艳的状元红.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/季秋之月菊盛开.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/宇宙在膨胀，幕后“推手”什么样.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/宇宙混沌时 氦原子这样遇上氢离子.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/宇宙的终极命运将会怎样.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/守得“云”开见磁星.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/家养蝴蝶兰不再高不可攀.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/家务劳动或许能救你一命.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/家有装修房，试着种盆虎尾兰.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/容颜多变的使君子.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/宽吻海豚单亲育幼.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/宾德亚的“喇帕”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/富锂巨星谜云.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/寻找大自然中神秘的绿光.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/小巧的羽唇兰.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/小泡泡大威力.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/小行星“法厄同”越来越近，你怕吗？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/小行星为何成为大热点.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/小行星殖民时代即将到来，你准备好了吗.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/小身材大智慧——咖啡.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/小鼠战大鼠，靠气味取胜.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/尸花——疣柄魔芋.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/山茶≠曼陀罗.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/工业机器人，最初的那些年.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/巧克力如此美味，感谢粒子加速器.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/巴西国花——黄花风铃木.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/布叶疏疑竹，分花嫩似桃——“竹叶桃花”夹竹桃.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/干细胞“不老神话”的现实与梦想.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/年幼的宇宙 如何养育出大胖子黑洞.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/幸福同心果——古城玫瑰树.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/幸运四叶草之白车轴草.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/幽谷奇葩—苦苣苔花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/广告达人——红纸扇.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/康复机器人.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/开在芭蕉树上的“荷花”——紫苞芭蕉.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/开局一条狗，人类就这样征服了地球.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/开橙色花的羊蹄甲.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/引领未来的颠覆性能源技术.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/当哮喘与过敏“相遇”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/当心，别中了蝎子的“分子组合拳”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/当物种识别困难时，如何保护野生动植物贸易中的濒危物种？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/当衣食住行“遇见”软物质.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/当银河系撞上仙女座 地球会怎样.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/形如禾雀的褶皮黧豆.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/形如麦穗的石豆兰.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/微生物+人工智能：开启新一代生物制造.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/微生物——捍卫土壤小战士.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/微纳米机器人.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/微胖界的明星吃啥？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/快速射电暴：宇宙物质分布的“探针”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/怕痒的树——紫薇.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/恐龙会不会吐舌头.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/恒星的第10001种死法.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/您见过竹子开花吗？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/惊艳的寄生花重现西双版纳.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/愤怒&amp;抑郁！背后的罪魁祸首究竟是谁？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/我们热爱拈花摘果.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/我国科学家“看见”恒星诞生的最初一瞬.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/我国转基因作物的安全与评价.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/我很小，但我真的是猴.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/我是Pika，不是皮卡丘；我是鼠兔，我属兔！.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/戴“帽子”的美少女——益智.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/打到关底才发现“没带头”，这种精子要不要.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/打脸谢尔顿的电池，了解一下.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/扬翅飞舞的凤蝶仙子——大花紫薇.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/把大自然的黑还给夜晚.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/把负面情绪“呼”出去.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/抱团取暖的新解法.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/招蜂引蝶的广告达人——玉叶金花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/挂袈裟的佛教圣树——中国无忧树.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/挥之不去的茨菰香.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/探寻类星体快速“熄灭”的秘密.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/探海高手——水下机器人.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/探秘“北京时间”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/探索各种发电方式有感.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/探索微观世界的神器——超分辨显微成像技术.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/探索月球的“另一面”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/描绘银河系结构分几步.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/揭开宇宙诞生的谜题.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/揭开远古冰川的行踪之谜.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/揭秘宇宙加速膨胀背后的暗能量.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/揭秘记忆的征途.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/擅打“气味战”的彝家野味——野拔子.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/攻克丙型肝炎的利器：动物模型.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/文殊兰、水鬼蕉，分得清吗.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/斑胸草雀会“胎教”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/斑鳖的现状及保护问题.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/斗嘴的达尔文雀.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/新一代显示技术——OLED.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/旋翼飞行机器人.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/无线充电黑科技：磁共振技术.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/无花果真的无花吗.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/无茎盆距兰.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/时间都去哪儿了？计时科技发展史.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/明明是木却偏叫“鱼”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/星系“变脸” 人类也许见证了类星体的诞生.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/春天撩妹必备识花宝典之这些花花都是谁？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/春天来了，你吃花了吗.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/春天的那些花儿.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/春姑娘的手捧花——紫绣球.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/春日里一抹黄——金莲木.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/春日飞舞的“雪花”---喷雪花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/春未到，花已开——炮仗花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/春花烂漫婆婆纳.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/晶莹洁白狗牙花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/智能手机屏幕有多少层组成？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/智能电网概述与解决方案.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/暗物质和暗能量 物理学天空这两朵乌云何时才能消散.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/暗物质粒子探测.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/暗物质：迷失的大多数.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/暗能量什么样 爱因斯坦只“蒙”对了一半.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/曼佗山庄无“曼陀罗”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/最后的前沿.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/最美冰川之乡在波密.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/月下红美人——红花玉蕊.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/月亮离我们有多远？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/月季、玫瑰和蔷薇，到底哪不同？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/月掩毕宿五 520年前哥白尼也看过.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/月球上有水吗？陨石知道答案.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/月球从何而来 “嫦娥”正接近答案.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/月球鲜为人知的“另一面”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/有一种行走虽然随机，却也能走出精彩.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/有了意念当“指挥” 假肢也能很“听话”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/有气体流向黑洞.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/望远镜——我和远方有个约会.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/望远镜的眼睛有多大？这个参数很关键.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/未来世界的3D打印技术.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/朴素而芬芳的假鹰爪和鹰爪花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/朵朵葵花向太阳——向日葵.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/杜鹃花开映山红.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/来自印度的“跳舞女郎”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/来自澳大利亚的金熊猫——金蒲桃.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/极光的绚丽色彩从何而来 小小粒子有贡献.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/林中火凤凰——洋金凤.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/果园里的“魔术师”——神秘果.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/果子家族的色彩传奇.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/果实硕大的仙都果.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/果实红彤彤诱人的铁冬青.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/果汁和白开水，你如何选择.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/枝条形似竹节的竹节树.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/柊树花开辰山.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/柞蚕的食物——阿江榄仁.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/树上产柴油——东京油楠.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/根际——土壤微生物的乐园.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/梅花知多少：您听过咏梅，可您了解梅花嘛？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/梯田——山岭雕刻艺术品.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/检测水质的“白富美”——海菜花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/植物上那些黄黄绿绿、没根没叶的丝状物究竟是啥？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/植物中的小强——九死还魂草.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/植物园常见昆虫动物辨识.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/植物寿星——海南龙血树.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/植物抗虫历险记.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/植物标本制作哪有这么简单？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/植物界的“电信运营商”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/植物界的大熊猫——金花茶.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/植物科学画：深藏功与名.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/植物隐身术.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/植物鲜为人知的夜生活.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/此夜星繁河正白.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/死亡是什么？动物能意识到吗？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/每秒旋转上百圈 宇宙“灯塔”照亮引力波探测新窗口.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/毒液为什么偏就害怕这类声音.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/气候变化或将导致强湍流增多.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/水上天堂鸟——再力花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/水下滑翔机.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/水与氧气的纠葛.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/水中油污，再小也能清理干净.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/水会逃出地球吗？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/水在太阳系并不稀罕.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/水宫仙子——荷花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/水母及其它浮游动物.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/水香菜是一种什么菜？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/沙海中的“隐形森林”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/沟谷雨林里的珍奇动物——毛耳飞鼠.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/没见过鼠尾草的花海，还不快来辰山.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/泛滥和珍稀的植物.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/泛着玉石光泽的夜香木兰.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/洪氏半边莲：花开半边 美艳动人.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/流感高发！关于流感病毒你应该知道的N个真相！.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/流感，绝非一场糟糕的感冒.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/流石滩岩壁上跃动的蓝精灵——拟耧斗菜.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/流转在时光里的花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/浅谈土壤多样性.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/浅谈生命的起源-----从米勒实验说起.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/浅谈类脑智能.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/浅谈软件定义卫星.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/浩瀚的宇宙来自“真空涨落”吗？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/浮游植物——漂浮的“弹簧圈”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/海斗深渊 触摸地球上最深的海洋.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/海杧果：金龟子的婚床.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/海洋的生命周期.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/海洋那么大，我想去看看.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/海绵共生微生物群落.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/海飘植物——长柄银叶树.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/深海地质灾害有哪些？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/深海着陆器.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/深海秘境——海底热泉和冷泉.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/深海贝王：砗磲.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/深秋里的低调“倩影”——青葙.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/清丽脱俗的麻栗坡蝴蝶兰.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/滚蛋吧！恶苗病.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/满树“小虫子”的山蒌.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/满树尽下黄金雨——腊肠树.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/火星地下盐湖里有生命吗.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/炮仗花开迎春来.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/点石成金话凹土.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/热带水果——刺果番荔枝.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/熄灯一小时就是环保？能用体温发电的薄膜了解一下？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/熟悉又陌生的东方香草植物.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/爱吃辣的除了你，还有ta.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/爱因斯坦探针：宇宙天体爆发的捕手.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/版纳植物园引种的螫毛果首次开花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/版纳植物园里的木棉.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/状元红开花 为高考学子加油.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/狐狸的手套——来自欧洲的洋地黄.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/狗从哪里来？至今仍是谜.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/狗狗与生命科学.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/狗的进化.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/猕猴桃VS奇异果.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/猕猴桃家族的“颜值担当”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/猴年话“猴”——猴爪杉.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/猴年话猴——猕猴桃.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/猴年话猴——猴子木.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/猴年话说猴头菌.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/玉兰花开春来到.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/现实中真的存在“毒液”这种共生体吗？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/玲珑玉雕花叶良姜.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/珍稀兰科植物贵州地宝兰.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/瑞年结硕果——油直叶榈.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/甜蜜无比的神秘果.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/生物特征识别：确认过“掌纹” 找到对的人.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/生物迁徙，寻找心中的诗和远方.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/甲虫也可以传粉.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/电离层：地球大气的高空魔镜.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/男性不育的遗传原因.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/病毒小百科：诺如病毒.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/病毒样颗粒与埃博拉疫苗研发.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/痒了忍不住抓挠？速激肽神经元是“真凶”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/登革热——一只蚊子惹的祸.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/白色沙漠——地球素颜之美.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/白花丹与蓝花丹.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/白饭树.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/白鱀豚躲猫猫之神奇的隐身毯.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/百合科植物中的佼佼者——大百合.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/真假难辨，我可能养了“假”植物.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/石油开采中的“三晋分家”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/破解2.5亿年前的“谋杀案”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/硅基集成电路会被终结吗？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/碧水夏荷——水生花卉争奇斗艳.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/磁力-空间碎片离轨“力”器.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/磁性监测——土壤重金属污染监测新技术.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/神奇干细胞与再生.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/神奇材料石墨烯.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/神奇的“脑起搏器”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/神奇的主动降噪技术.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/神奇的立体视觉.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/神奇的细胞“变性手术”——单倍体干细胞技术实现同性生殖.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/神奇的超材料——人工电磁结构材料.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/神奇的鬼脸天蛾.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/神秘暗物质 我要找到你，不管上天入地.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/神经科学的黑历史：前脑叶白质切除术.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/禾雀花开万鸟飞.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/禾雀花开闹春来.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/秀色可餐的大果西番莲.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/秃鹫缘何百毒不侵.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/秋天了，亲们准备好寻找“黄马褂”了吗.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/秋季怎么养多肉植物.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/科学与电影：历史与今天.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/科学家为何给老鼠立纪念碑？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/科学施用氮肥，变“双输”为“双赢”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/科学看待登革疫苗风波.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/科技承载梦想，创新改变未来——海绵城市.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/科研支撑保护——为了那些在海洋中翱翔的“鲲鹏”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/称霸一方的野龙竹开花消亡.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/稔子：野花胜家花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/稻草人的飞天梦.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/空间引力波探测： 在太空中捕捉引力波“音符”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/窥探宇宙最古远的星河.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/端午佳节话菖蒲，此菖蒲非彼菖蒲.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/端午节，我与植物有场约会.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/第伦桃：花清新 果美味.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/箭毒、毒箭，毒自何方？——沉睡的乌头.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/米老鼠树——金莲木.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/粉菠萝 想要吃你不容易.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/糖尿病治疗药物的百年历史简直是一部大戏.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/系外天体来访有多难 这颗新晋彗星给你线索.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/系外行星研究：寻找另一个地球.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/素雅芳香的木荷.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/紫艳小花却身披“铠甲”，它究竟是啥？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/繁花似锦——椭圆叶木蓝.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/红外探测新技术——量子级联探测器.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/红白相嵌的龙吐珠.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/红粉菲菲的云南樱花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/红色行星上的新发现离生命有多远.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/红花蕊木静静地开.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/红茴香红毒茴，你们这对混乱的毒物.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/红豆寄相思——海南红豆.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/细胞通信研究“梅开二度”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/细菌与人类的前世今生.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/结香——会打结的“植物匠人”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/给力之光：光驱机.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/给地球的皮肤保湿补水.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/给银河系外来客做个“DNA鉴定”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/给银河系画张“半身像”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/绚丽夏花——洋金凤.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/绚丽多姿的景天植物.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/络石如瀑，芳香十里.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/绽放在琥珀中的“静子花”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/绿叶丛中的五彩小鸟——金嘴蝎尾蕉.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/绿松石色小鸟花——翡翠葛.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/绿玉藤“花开二度”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/羊城四月天 相约洋紫荆.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/羊年话羊.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/美丽的植物杀手——猫爪藤.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/美味热带水果——龙贡果.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/羚牛袭击人的真相.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/羟基磷灰石——新世纪骨“替身”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/耀眼恒星是如何慢慢老去的.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/老年艾滋病，一个可能被忽略的高危人群.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/老茎开花结果的叉叶木.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/耕地红线——生命之线.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/聪明胡蜂的学习之道.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/聪明能干的机器人.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/肠道微生物与人类健康.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/能够抑制甜味的植物——宽叶匙羹藤.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/脉冲星发现 ：那些错失的遗憾.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/脊椎动物的来“龙”去脉.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/腕龙是怎么长成“巨无霸”的.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/自带“超级空调” 地球冷暖交替有“开关”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/艳丽多姿的“黄金鸟”——红火炬蝎尾蕉.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/艳如骄阳——金丝桃.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/节能减排的新型热电材料：填充方钴矿.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/芦荟能美容？这是有科学依据的！.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/芯片上的宇宙.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/花丛中有一支甜筒.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/花中“变色龙”——重瓣使君子.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/花型奇特的辐花蜘蛛抱蛋.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/花型独特的药用植物马利筋.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/花多果多的国家二级保护植物——千果榄仁.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/花大艳丽的大花第伦桃.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/花奇果更怪——炮弹树.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/花奇果艳 真假苹婆.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/花奇果艳的苹婆.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/花如火焰的火焰树.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/花如翡翠——翡翠葛.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/花如雪——山指甲.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/花娇色艳的黄花夹竹桃.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/花开为了谁——彗星兰属的故事.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/花开正茂的爪洼决明.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/花开正茂的粉花决明.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/花开百日红——紫薇.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/花形酷似小虾的虾子花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/花果满枝头的决明.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/花界劳模——松红梅.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/花红似火的刺桐.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/花红似火的广宁红花油茶.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/花美果奇的腊肠树.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/花色如鸳鸯 花香如茉莉.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/花色艳丽但无毒的水罂粟.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/花艳果实诱人的石榴.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/花香醉人——栀子花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/苔藓植物初印象——云南水生苔藓植物掠影.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/英伦君子——2012年诺奖得主John Gurdon.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/茶族皇后——金花茶.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/荒漠里的惊艳——沙漠玫瑰.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/荟萃园艺的景天植物.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/药物的体内旅行.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/药用植物大叶钩藤.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/药用植物宽叶千斤拔.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/药用植物新宠海巴戟.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/药用植物节鞭山姜.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/药用植物闭鞘姜.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/药用观赏皆宜的石豆兰.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/荷中极品——大洒锦.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/莫让谣言蒙蔽了眼睛——转基因，你了解多少？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/莲雾，想说爱你不容易.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/落羽杉红叶漫天舞秋风.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/葛属的分类.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/葵花籽“致癌之首”，科学还是谣言？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/蓝紫色小精灵——假连翘.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/蓝色妖姬——重瓣蝶豆.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/蓝花楹：“紫玉”妆成一树高.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/薄采其“茆”，谓之为莼——“水八仙”之莼菜篇.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/藏在深山人不识的野葛.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/藤本植物刺毛黧豆.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/蘑菇的黑科技：草船借箭.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/蚂蚁筑巢对土壤的影响.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/蜗牛藤——长在藤蔓上的“蜗牛”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/蜜蜂为何单恋一枝花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/蜻蜓老祖宗为什么如此彪悍.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/蝌蚪尾巴消失之谜.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/蝴蝶飞舞——蝶花荚蒾.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/表观遗传学研究或将成为攻克肺癌难关的未来之星.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/衰老生物学：寻找人生“不老药”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/被“遗忘”的金银莲花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/被忽略的郁金香——老鸦瓣.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/裸鲤耳石解密气候变化.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/见过当归花长啥样吗？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/观叶植物——雪茄竹芋.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/观赏植物刺黄果.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/观赏竹中的佼佼者——佛肚竹.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/解开栾川“古老儿童”化石密码.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/解码引力波信号 “弦外之音”验证黑洞“无毛”形象.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/认识一下鹰式波浪能发电装置.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/认识甲烷：看不见摸不着但却很强大.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/让“人造太阳”从东方升起.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/让人类看到更广阔的宇宙.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/让你短命的不是烟酒，而是你手里的白开水！.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/让你能在稀薄空气中奔跑的古老基因.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/让光转起来——探秘“光学悬链线”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/让全民疯狂的梭梭究竟有什么魅力？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/让地球氧气在5亿年前猛增的神秘力量找到了.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/让质子飞的更快.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/让野生物种在“伞”的庇护下繁衍生息.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/让黑暗赋予光明——黑硅自述.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/记忆中的蒲扇——蒲葵.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/记忆快速泛化 往事不再如烟.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/诗歌里的白鹭.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/话说天麻.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/请善待实验动物！丨世界实验动物日.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/调皮可爱的小灯笼——吊灯扶桑.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/质量超理论上限的它 揭示黑洞另一种存在方式.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/赏杜鹃，何必一定要远足.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/赛加羚羊在中国的历史分布区，野外灭绝与重新引入.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/走不了的植物如何“防暑”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/走进腐蚀世界 营造健康生活（一）——关注“世界腐蚀日”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/超强耀斑会带来什么.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/超新星“量产”的秘密.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/超萌手绘动画片：3分钟向你介绍中国太空实验的大管家！.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/跟着小新吃碗粥，什么粥？七草粥！.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/跨越边界——向图灵致敬.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/路边的野花君莫采“毒花”药草——泽漆.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/身在植物化学实验室 是不是真的冷到没朋友.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/转玉米基因的水稻.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/软舌螺的寻亲之旅.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/载人空间站——太空里的国家级实验室.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/辰山“水上阔叶林”进入最佳观赏期.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/辰山奇异植物“老虎须”开花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/辰山温室红木盛放.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/辰山烟火树绽放迎寒冬.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/辰山福禄考盛开将进入最佳观赏季.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/迎风摇曳的铃铛——纹瓣悬铃花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/迎风摇曳的铃铛——风铃花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/近地小行星：地球不得不防的“近邻”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/近距离认识“关病毒的盒子”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/近距离认识“植物疫苗”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/这一次，“冰片”真的走向世界了.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/这些神级水下机器人“出生”在沈阳.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/这次会是外星人和我们say hi吗.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/这片黄会是谁？——迎春、云南黄馨、金钟花、连翘.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/这花居然叫“帝王”，够霸气！.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/远古小怪蛋：长相奇特 身份成谜.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/远古盾皮鱼是人类的祖先吗.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/远方的来客——“水桶腰”也可以这么赞.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/远渡重洋的美人树——美丽异木棉.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/迷你羊蹄甲.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/追逐雷暴，捕捉瞬息即逝的红色闪电.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/那些爷爷辈的水下机器人.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/酷似樱桃的罗比梅.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/酸酸甜甜好滋味——木奶果.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/酸酸甜甜就是我——肖蒲桃.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/酸酸甜甜的木奶果.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/里约再无“大冒险”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/重返月球步伐受阻 小小月尘或是原因.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/重金属——土壤的“毒药”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/野外流浪狗能否填补狼的生态位？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/野火烧不尽 春风吹又生——火烧花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/野生水果大叶藤黄.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/野葛是如何让“老美”又爱又恨的.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/量子计算、人工智能与区块链.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/量子通信 玄而不虚.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/金沙江干热河谷中的舞者——旱地木槿.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/金秋盛放三角梅.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/金花朵朵——软枝黄蝉.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/钻石岂止于饰.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/铁树开花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/银河系黑洞周围存在较冷气体盘.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/长在树上的“大象鼻子”结果了.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/长在空气中的根——植物的气生根.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/间充质干细胞：干细胞中的孙悟空.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/间歇性饮食：糖尿病人营养干预新方法.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/阳光动力2号——不耗一滴油完成全球飞行揭秘.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/除了油腻，中年男人还需要关心“男性更年期”这件事.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/隆升并非一次完成 青藏高原曾是它们的“老家”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/随A博士游科技岛 (3D打印篇).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/集聪明美貌于一身的益智.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/雨林稀世珍果——瓜拉纳.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/青藏高原像引擎 “驱动”大气云团运行.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/靓丽多彩的包装盒&amp;粒子加速器.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/靠疏水基团，纳米海绵“吸走”柴油泄漏.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/面对埃博拉，我们严阵以对.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/靶向编辑长寿基因 让老弱血管“Q弹爽滑”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/页岩气竟与恐龙时代火山灰有关.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/颜值高 智商更高——日日樱.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/风铃飘荡绿叶间——蔓性风铃花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/飞花似流星——蜂出巢.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/食虫植物——小人物逆袭之路上的典范.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/食蟹猴诞生记.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/香花植物——假鹰爪.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/香若幽兰——含笑花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/香龙血树花开.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/马兜铃家族的袖珍分子——海南马兜铃.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/马鞭草——灵魂的护佑剂.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/驰骋南极的移动机器人.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/驱蚊“小黄车”，你今天用了吗？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/高价补硒是否必要？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/高原动植物居民“户口”再普查——生物与生态变化.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/高原鼠兔：朋友还是敌人.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/高含喜树碱植物青脆枝.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/高山植物之趣.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/高性能条纹相机——尖端科学仪器皇冠上的明珠.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/高铁为什么长这样.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/高锰钢电水壶里的腐蚀问题.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/高颜值浮游生物 大海中传递能量的“阳光使者”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/鬼斧神工之丹霞地貌.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/鱼油食用的常见误区.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/鲜为人知的圣诞植物.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/鸡叫的学问.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/鸡年春晚的吉祥物定了！鸡肚子上为啥有个牡丹花？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/鸡年第一“案”：黄鼠狼到底吃不吃鸡.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/鸡蛋怎样吃才健康？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/鸡蛋是一个细胞吗？.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/鸽子山，史前遗址中的一颗璀璨明珠.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/麒麟花.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/黄瓜的风味品质.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/鼓鼓囊囊的气球果.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/鼯鼠类(2)：2“特有种属”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/鼯鼠类(3)：又2“特有种”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/鼯鼠类(4)：3“特大种”.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/鼯鼠类(5)：鼯鼠属4大型种.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/龙舟雨来 龙船花开.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,50 +850,57 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/NLP_PROJECT$main.coverage" NAME="main Coverage Results" MODIFIED="1581786442963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crawler&amp;Convert" />
+    <SUITE FILE_PATH="coverage/NLP_PROJECT$text.coverage" NAME="text Coverage Results" MODIFIED="1581836335863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_PROJECT$CreateDocSequences.coverage" NAME="CreateDocSequences Coverage Results" MODIFIED="1581847952948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_PROJECT$main.coverage" NAME="main Coverage Results" MODIFIED="1581832602534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crawler&amp;Convert" />
     <SUITE FILE_PATH="coverage/NLP_PROJECT$NLPCrawler3.coverage" NAME="NLPCrawler3 Coverage Results" MODIFIED="1580527704771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crawler&amp;Convert" />
+    <SUITE FILE_PATH="coverage/NLP_PROJECT$LabelTool.coverage" NAME="LabelTool Coverage Results" MODIFIED="1581864972768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LabelTool" />
+    <SUITE FILE_PATH="coverage/NLP_PROJECT$model.coverage" NAME="model Coverage Results" MODIFIED="1581864767502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_PROJECT$utils.coverage" NAME="utils Coverage Results" MODIFIED="1581864678224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_PROJECT$CustomizeConfig.coverage" NAME="CustomizeConfig Coverage Results" MODIFIED="1581864748398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LabelTool" />
     <SUITE FILE_PATH="coverage/NLP_PROJECT$Crawler.coverage" NAME="Crawler Coverage Results" MODIFIED="1580618458692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crawler&amp;Convert" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="NLP_PROJECT" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Crawler&amp;Convert/data/3D生物打印技术.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Crawler&amp;Convert/main.py">
+        <entry file="file://D:/python36/Lib/json/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="85" selection-start-line="85" selection-end-line="86" />
-              <folding>
-                <element signature="e#953#1053#0" />
-              </folding>
+            <state relative-caret-position="95">
+              <caret line="343" selection-start-line="343" selection-end-line="343" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Crawler&amp;Convert/text_urls.json">
+        <entry file="file://$PROJECT_DIR$/LabelTool/config.json">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="2" selection-start-column="2" selection-end-column="2" />
+              <caret column="112" selection-start-column="112" selection-end-column="112" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LabelTool/CustomizeConfig.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Crawler&amp;Convert/utils.py">
+        <entry file="file://$PROJECT_DIR$/LabelTool/LabelTool.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+            <state relative-caret-position="76">
+              <caret line="228" lean-forward="true" selection-start-line="228" selection-end-line="228" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
-                <element signature="e#3614#4316#0" />
-                <element signature="e#6008#8565#0" />
+                <element signature="e#0#20#0" expanded="true" />
+                <element signature="e#2587#3318#0" />
+                <element signature="e#2647#3063#0" />
               </folding>
             </state>
           </provider>
@@ -83,6 +924,20 @@
       <find>finish_count</find>
       <find>Error</find>
       <find>async</find>
+      <find>50</find>
+      <find>233</find>
+      <find>&quot;</find>
+      <find>发明了</find>
+      <find>250000</find>
+      <find>2</find>
+      <find>A</find>
+      <find>graph</find>
+      <find>[unk</find>
+      <find>·</find>
+      <find>铟</find>
+      <find>unk</find>
+      <find>absoluteIndex</find>
+      <find>handle</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,14 +947,25 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Crawler&amp;Convert/utils.py" />
+        <option value="$PROJECT_DIR$/CreateCorpus.py" />
         <option value="$PROJECT_DIR$/Crawler&amp;Convert/main.py" />
+        <option value="$PROJECT_DIR$/model.py" />
+        <option value="$PROJECT_DIR$/Corpus/3D技术的前世今生.txt" />
+        <option value="$PROJECT_DIR$/LabelTool.py" />
+        <option value="$PROJECT_DIR$/text.py" />
+        <option value="$PROJECT_DIR$/CreateDocSequences.py" />
+        <option value="$PROJECT_DIR$/utils.py" />
+        <option value="$PROJECT_DIR$/LabelTool/LabelTool.py" />
+        <option value="$PROJECT_DIR$/LabelTool/config.json" />
+        <option value="$PROJECT_DIR$/LabelTool/CustomizeConfig.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+    <option name="x" value="366" />
+    <option name="y" value="6" />
+    <option name="width" value="979" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectId" id="1XktQ6HcvbjVcboDN7xwRRtsx0n" />
   <component name="ProjectView">
@@ -107,7 +973,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -115,21 +980,11 @@
               <item name="NLP_PROJECT" type="b2602c69:ProjectViewProjectNode" />
               <item name="NLP_PROJECT" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="NLP_PROJECT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NLP_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="Crawler&amp;Convert" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NLP_PROJECT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NLP_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="Crawler&amp;Convert" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -144,6 +999,14 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\git_of_skydownacai\NLP_PROJECT\LabelTool" />
+      <recent name="D:\git_of_skydownacai\NLP_PROJECT" />
+      <recent name="D:\git_of_skydownacai\NLP_PROJECT\bert_model" />
+      <recent name="D:\git_of_skydownacai\NLP_PROJECT\bert_model\bert-chinese" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -156,8 +1019,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="Crawler" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.LabelTool">
+    <configuration name="CreateDocSequences" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="NLP_PROJECT" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -165,12 +1028,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Crawler&amp;Convert" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\git_of_skydownacai\NLP_PROJECT\Crawler&amp;Convert\utils.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CreateDocSequences.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -179,7 +1042,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="NLPCrawler3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="CustomizeConfig" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="NLP_PROJECT" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -187,12 +1050,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Crawler&amp;Convert" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LabelTool" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Crawler&amp;Convert/NLPCrawler3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LabelTool/CustomizeConfig.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -201,7 +1064,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="LabelTool" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="NLP_PROJECT" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -209,12 +1072,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Crawler&amp;Convert" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LabelTool" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Crawler&amp;Convert/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LabelTool/LabelTool.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -223,7 +1086,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pdf2txt" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="model" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="NLP_PROJECT" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -231,12 +1094,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Crawler&amp;Convert" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Crawler&amp;Convert/pdf2txt.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="NLP_PROJECT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -247,10 +1132,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.pdf2txt" />
-        <item itemvalue="Python.Crawler" />
-        <item itemvalue="Python.NLPCrawler3" />
+        <item itemvalue="Python.LabelTool" />
+        <item itemvalue="Python.model" />
+        <item itemvalue="Python.CustomizeConfig" />
+        <item itemvalue="Python.utils" />
+        <item itemvalue="Python.CreateDocSequences" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +1155,9 @@
       <workItem from="1580570752284" duration="604000" />
       <workItem from="1580574015626" duration="598000" />
       <workItem from="1580617677872" duration="757000" />
-      <workItem from="1581779016107" duration="5677000" />
+      <workItem from="1581779016107" duration="6059000" />
+      <workItem from="1581821254733" duration="21696000" />
+      <workItem from="1581849397135" duration="9916000" />
     </task>
     <task id="LOCAL-00001" summary="改进pdf2txt，改进换行方式，判断title适当增加换行。但是还有脚注处理办法没有想到">
       <created>1580646813325</created>
@@ -282,35 +1170,34 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21534000" />
+    <option name="totallyTimeSpent" value="53528000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.37131366" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Statistic" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8862974" visible="true" weight="0.23525469" />
+      <window_info id="Structure" order="1" sideWeight="0.113702625" side_tool="true" visible="true" weight="0.23525469" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.37252125" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.5141643" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Json Parser" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Statistic" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Json Parser" order="3" visible="true" weight="0.13270777" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,32 +1236,9 @@
     <entry file="file://$PROJECT_DIR$/Crawler&amp;Convert/pdfURLs.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crawler&amp;Convert/data/质量超理论上限的它_揭示黑洞另一种存在方式.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Crawler&amp;Convert/data/两种微生物并肩作战_让生物光伏系统发电能力创新高.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Crawler&amp;Convert/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#3614#4316#0" />
-            <element signature="e#6008#8565#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Crawler&amp;Convert/data/质量超理论上限的它_揭示黑洞另一种存在方式.txt" />
+    <entry file="file://$PROJECT_DIR$/Crawler&amp;Convert/data/两种微生物并肩作战_让生物光伏系统发电能力创新高.txt" />
+    <entry file="file://$PROJECT_DIR$/data/3D生物打印技术.txt" />
     <entry file="file://$PROJECT_DIR$/Crawler&amp;Convert/text_urls.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -382,18 +1246,182 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/21世纪的神奇材料-----石墨烯及其应用.txt" />
+    <entry file="file://$PROJECT_DIR$/data/3D技术的前世今生.txt" />
+    <entry file="file://$PROJECT_DIR$/data/27年下降75%，飞行昆虫数量骤减为哪般.txt" />
+    <entry file="file://D:/python36/Lib/site-packages/pytorch_pretrained_bert/tokenization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="149" column="25" selection-start-line="149" selection-start-column="25" selection-end-line="149" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python36/Lib/site-packages/torch/__init__.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="88" column="4" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crawler&amp;Convert/data/3D生物打印技术.txt" />
+    <entry file="file://$PROJECT_DIR$/Crawler&amp;Convert/data/3D技术的前世今生.txt" />
+    <entry file="file://D:/python36/Lib/site-packages/torch/nn/modules/sparse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="964">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python36/Lib/site-packages/torch/nn/modules/module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="531" selection-start-line="531" selection-end-line="531" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python36/Lib/site-packages/pytorch_pretrained_bert/modeling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="267" selection-start-line="267" selection-end-line="267" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Crawler&amp;Convert/main.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-145">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bert_model/bert-chinese/vocab.txt">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
-          <caret line="85" selection-start-line="85" selection-end-line="86" />
+          <caret line="106" column="1" selection-start-line="106" selection-start-column="1" selection-end-line="106" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Corpus/3D技术的前世今生.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python36/Lib/site-packages/torch/nn/functional.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="1483" selection-start-line="1483" selection-end-line="1483" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DocSequences/3D打印，个性化触手可及.txt" />
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-181045577/PyQt5/QtWidgets/QAction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="198" column="8" selection-start-line="198" selection-start-column="8" selection-end-line="198" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-181045577/PyQt5/QtGui/QIcon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="118" column="8" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-181045577/PyQt5/QtGui/QKeySequence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-181045577/PyQt5/QtWidgets/QLayout.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CreateCorpus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DocLabel/“二师兄”教你新知识，甲减患者为什么容易贫血和免疫力差.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-181045577/PyQt5/QtWidgets/QWidget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="684" column="26" lean-forward="true" selection-start-line="684" selection-start-column="26" selection-end-line="684" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CreateDocSequences.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding>
-            <element signature="e#953#1053#0" />
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crawler&amp;Convert/data/3D生物打印技术.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://D:/python36/Lib/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="343" selection-start-line="343" selection-end-line="343" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="420" column="8" selection-start-line="420" selection-start-column="8" selection-end-line="420" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LabelTool/LabelTool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="228" lean-forward="true" selection-start-line="228" selection-end-line="228" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#2587#3318#0" />
+            <element signature="e#2647#3063#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LabelTool/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="112" selection-start-column="112" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LabelTool/CustomizeConfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
