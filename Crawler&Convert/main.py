@@ -4,11 +4,7 @@ sys.path.append("./")
 
 from bs4 import  BeautifulSoup
 
-import json
-
-import re
-
-from utils import *
+from utils.otherUtils import *
 
 page_url = lambda i:"http://www.cas.cn/kx/kpwz/index_{}.shtml".format(i) if i > 1 else "http://www.cas.cn/kx/kpwz"
 

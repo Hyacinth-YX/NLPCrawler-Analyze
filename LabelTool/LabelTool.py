@@ -1,5 +1,3 @@
-import tkinter as tk
-
 import json
 
 import sys
@@ -8,11 +6,11 @@ import re
 
 sys.path.append("./")
 
-from utils import CallBack
+from utils.otherUtils import CallBack
 
 import PyQt5.QtWidgets as QW
 
-from PyQt5.QtGui import QIcon,QFont,QKeySequence
+from PyQt5.QtGui import QIcon
 
 import os
 

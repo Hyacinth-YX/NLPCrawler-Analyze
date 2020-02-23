@@ -1,2 +1,8 @@
 /bert_model/
 /DocLabel/
+/Crawler&Convert/
+/LabelTool/
+/data/
+**/cached
+*.pdf
+/temp/
