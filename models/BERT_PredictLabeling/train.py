@@ -1,15 +1,16 @@
+import sys
+sys.path.append("../../")
 import pytorch_pretrained_bert as bert
 import torch
-import config.args as args
+import config as args
 from utils.dataprocessUtils import DataProcessor,InputExample
 from utils.dataloaderUtils import create_batch_iter
-from utils.modelUtils import SeqLabelingTrainer,load_model
+from utils.modelUtils import SeqLabelingTrainer
 from models.Bert_Token_Classfier import Bert_Token_Classfier_Model
 import json
 
 from utils.loggerUtils import init_logger
-
-logger = init_logger("BERT SRL",args.log_path)
+logger = init_logger("BERT Predict Labeling", args.log_path)
 
 class SRL_PREDICT(DataProcessor):
 
@@ -55,7 +56,8 @@ Dev_dataloader  = create_batch_iter(
 
 num_label = len(data_processor.get_labels())
 
-model = Bert_Token_Classfier_Model(300,num_label).from_pretrained(args.SRL_predict_model_dir + "cached\\pytorch_model_4.bin")
+model = Bert_Token_Classfier_Model(300,num_label).from_pretrained(
+	args.SRL_predict_model_dir + "cached\\pytorch_model_4.bin")
 
 loss_weight = torch.FloatTensor([3 for i in range(num_label)]).cuda()
 

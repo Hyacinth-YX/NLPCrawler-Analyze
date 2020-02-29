@@ -1,4 +1,3 @@
-import config.args as args
 import matplotlib.pyplot as plt
 
 from utils.otherUtils import IO
@@ -13,13 +12,10 @@ def plot_history(dir):
 	plt.xlabel("epoch")
 	plt.title("Training History")
 	plt.grid()
-
 	plt.legend()
 	plt.show()
 def colored(string, fg="white", bg="black", style=0):
-
 	fg_map = {
-
 		"black": 30,
 		"red": 31,
 		"green": 32,
@@ -29,9 +25,7 @@ def colored(string, fg="white", bg="black", style=0):
 		"cyan": 36,
 		"white": 37,
 	}
-
 	bg_map = dict([color, fg_map[color] + 10] for color in fg_map)
-
 	bg_map[""] = ""
 
 	'''
@@ -44,11 +38,9 @@ def colored(string, fg="white", bg="black", style=0):
 			7       反白显示
 			8       不可见
 	'''
-
 	return '\033[{};{};{}m{}\033[0m'.format(style, fg_map[fg], bg_map[bg], string)
 
 def colorful_text(tokens,labels,colormap):
-
 	output = ""
 	for idx,token in enumerate(tokens):
 		label = labels[idx]

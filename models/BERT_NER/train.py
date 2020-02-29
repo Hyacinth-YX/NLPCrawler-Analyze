@@ -1,22 +1,20 @@
+import sys
+sys.path.append("../../")
 import pytorch_pretrained_bert as bert
 import torch
-import config.args as args
+import config as args
 from utils.dataprocessUtils import DataProcessor,InputExample
 from utils.dataloaderUtils import create_batch_iter
 from utils.modelUtils import SeqLabelingTrainer
 from models.Bert_Token_Classfier import Bert_Token_Classfier_Model
 import json
-
 from utils.loggerUtils import init_logger
-
-logger = init_logger("bert ner",args.log_path)
+logger = init_logger("bert ner", args.log_path)
 
 class NER_PeopleDaily(DataProcessor):
 
 	"""将数据构造成example格式"""
-
 	def _create_example(self, lines, set_type):
-
 		examples = []
 		for i, line in enumerate(lines):
 			guid = "%s-%d" % (set_type, i)
@@ -39,14 +37,11 @@ class NER_PeopleDaily(DataProcessor):
 		return examples
 
 	def get_labels(self):
-
 		return args.NER_PEOPLEDAILY_labels
 
 class NER_CLUE(DataProcessor):
 
 	def _create_example(self, lines, set_type):
-
-
 		examples = []
 		for i, line in enumerate(lines):
 			guid = "%s-%d" % (set_type, i)
@@ -60,19 +55,16 @@ class NER_CLUE(DataProcessor):
 		return examples
 
 	def get_train_examples(self):
-
 		lines = self._read_json(args.NER_TRAIN)
 		examples = self._create_example(lines, "train")
 		return examples
 
 	def get_dev_examples(self):
-
 		lines = self._read_json(args.NER_VALID)
 		examples = self._create_example(lines, "dev")
 		return examples
 
 	def get_labels(self):
-
 		return args.NER_labels
 
 
@@ -104,15 +96,10 @@ loss_weight[0] = 1
 trainner = SeqLabelingTrainer(
 
 	loss = torch.nn.CrossEntropyLoss(weight = loss_weight,ignore_index = -1),
-
 	model = model,
-
 	train_dataloader = Train_dataloader,
-
 	dev_dataloader= Dev_dataloader,
-
 	cached_path = "cached/",
-
 	cached_point = 1
 )
 

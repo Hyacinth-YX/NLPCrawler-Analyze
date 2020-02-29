@@ -1,32 +1,25 @@
-from utils.loggerUtils import init_logger
+import sys
+sys.path.append("..")
 from utils.corpusUtils import CTB
 from utils.dataprocessUtils import train_val_split,sent2char
-import config.args as args
+import config
 from  tqdm import tqdm
-logger = init_logger("Produce data",args.log_path)
 import json
 import os
-
+from loguru import logger
 def produce_NER_data():
-
-	for set_idx,dir in enumerate([args.NER_TRAIN_SOURCE,args.NER_VALID_SOURCE]):
-
+	for set_idx,dir in enumerate([config.NER_Param.train_source, config.NER_Param.valid_source]):
 		if set_idx == 0:
 			subset = "train"
 		else:
 			subset = "dev"
-
-		logger.info("Produce NER data : %s"%subset)
-
 		with open(dir, "r", encoding='utf-8') as fr:
 			lines = []
 			for line in fr:
 				_line = line.strip('\n')
 				lines.append(_line)
-
 		label_list = set()
-
-		for idx in tqdm(range(len(lines)),desc = "Produce File"):
+		for idx in tqdm(range(len(lines)),desc = "create NER CLUE dataset"):
 			line = json.loads(lines[idx])
 			text_a = line["text"]
 			labels = ["O"] * len(text_a)
@@ -44,28 +37,22 @@ def produce_NER_data():
 			source = " ".join(text_a)
 			target = " ".join(labels)
 			df = {"source":source,"target":target}
-
-			with open(os.path.join(args.NER_data_dir,subset + ".json"),"a",encoding = "utf-8") as f:
+			with open(os.path.join(config.NER_Param.data_dir, subset + ".json"), "a", encoding ="utf-8") as f:
 				f.write(json.dumps(df) + "\n")
-
 		logger.info("-------Produced data Example--------")
 		logger.info("source: %s" % source)
 		logger.info("target: %s" % target)
 		logger.info("label list " + str(label_list))
-
 def produce_predict_seqlabeling_data():
 
-	logger.info("Produce SRL_predict data" )
 	CTB_corpus =  CTB(load_cpb=True)
-
 	sources = []
 	targets = []
 	labels = set()
 	for file_name in CTB_corpus.files:
 		file = CTB_corpus.files[file_name]
 		sents = file.sents
-		for idx,sent in enumerate(sents):
-
+		for idx,sent in tqdm(enumerate(sents),desc = "create dataset"):
 			PA_structures = sent["PA-structure"]
 			terminals = sent["parseTree"].terminals
 			word_labels = ["O" for i in range(len(terminals))]
@@ -90,9 +77,9 @@ def produce_predict_seqlabeling_data():
 						else:
 							for p in range(word_len):
 								if p == 0 :
-									target.append("B-" + word_label)
+									target.append(word_label)
 								else:
-									target.append("I-" + word_label)
+									target.append(word_label)
 								labels.add("B-" + word_label)
 								labels.add("I-" + word_label)
 			source = " ".join(source)
@@ -101,12 +88,9 @@ def produce_predict_seqlabeling_data():
 			sources.append(source)
 			targets.append(target)
 
-	logger.info("split data into train & dev")
-
 	train,valid = train_val_split(sources,targets)
-
-	with open(args.SRL_predict_train,"a",encoding = "utf-8") as f:
-		with open(args.SRL_predict_valid,"a",encoding = "utf-8") as f2:
+	with open(config.PredictLabeling_Param.train, "a", encoding ="utf-8") as f:
+		with open(config.PredictLabeling_Param.valid, "a", encoding ="utf-8") as f2:
 			for i in tqdm(range(len(train)),desc = "write to train set"):
 					df = {"source":train[i][0],"target":train[i][1]}
 					f.write(json.dumps(df) + "\n")
@@ -121,13 +105,12 @@ def produce_predict_seqlabeling_data():
 	logger.info("target: %s" % train[0][1])
 	logger.info("label list :"  + str(labels) )
 def produce_PA_structure_data():
-
-	logger.info("Produce SRL_PA_structure data" )
+	param = config.SRL_Param()
 	CTB_corpus =  CTB(load_cpb=True)
-
 	X = []
 	seqLabel = []
 	labels = set()
+	valid_arg = ["O","ARG0","ARG1","ARG2","ARG3","ARG4""ARG0-PSR","ARG0-PSE","ARGM-ADV","ARGM-TMP","ARGM-CND","ARGM-LOC","ARGM-MNR","ARGM-DIS","ARGM-DIR","ARGM-TPC","ARGM-PRP","ARGM-BNF","ARGM-DGR","ARGM-EXT","ARGM-FRQ",'ARGM-NEG']
 	for file_name in CTB_corpus.files:
 		file = CTB_corpus.files[file_name]
 		sents = file.sents[3:]
@@ -141,6 +124,8 @@ def produce_PA_structure_data():
 				#便利每句话的每个PA
 				arguments = PA["args"]
 				for argument in arguments:
+					if argument not in valid_arg:
+						continue
 					spans = arguments[argument]
 					spans = spans.replace("*",",")
 					spans = spans.split(",")
@@ -175,9 +160,9 @@ def produce_PA_structure_data():
 						if word_label != "O":#需要IB标签
 							#判断是否为B
 							if j == 0 and (target == [] or word_label not in target[-1]):
-								encoded_word_label = "B-" + word_label
+								encoded_word_label = "B-"+word_label
 							else:
-								encoded_word_label = "I-" + word_label
+								encoded_word_label = "I-"+word_label
 						else:
 							encoded_word_label = word_label
 						labels.add(encoded_word_label)
@@ -191,13 +176,9 @@ def produce_PA_structure_data():
 				X.append((source,args_predicts[i]))
 				seqLabel.append(targets[i])
 
-
-	logger.info("split data into train & dev")
-
 	train,valid = train_val_split(X,seqLabel)
-
-	with open(args.SRL_train,"a",encoding = "utf-8") as f:
-		with open(args.SRL_valid,"a",encoding = "utf-8") as f2:
+	with open(param.train, "a", encoding ="utf-8") as f:
+		with open(param.valid, "a", encoding ="utf-8") as f2:
 			for i in tqdm(range(len(train)),desc = "write to train set"):
 					df = {"source":train[i][0],"target":train[i][1]}
 					f.write(json.dumps(df) + "\n")
@@ -205,25 +186,24 @@ def produce_PA_structure_data():
 					df = {"source":valid[j][0],"target":valid[j][1]}
 					f2.write(json.dumps(df) + "\n")
 
-	logger.info("Produce SRL_predict data done !")
 	logger.info("Train: %d examples , Dev: %d examples " % (len(train),len(valid)))
 	logger.info("-------Produced data Example--------")
 	logger.info("source: %s" % str(train[0][0]))
 	logger.info("target: %s" % str(train[0][1]))
-	#logger.info("label list :"  + str(labels) )
-
-def produce_NER_PEOPLE_DAILY_data(stop_word_list=None, vocab_size=None):
+	logger.info("label list :"  + str(labels) )
+def produce_NER_PEOPLE_DAILY_data():
 	"""实际情况下，train和valid通常是需要自己划分的，这里将train和valid数据集划分好写入文件"""
+	p = config.NER_Param()
 	targets, sentences = [],[]
-	with open("data3\source_BIO_2014_cropus.txt", 'r',encoding = "utf-8") as fr_1, \
-			open("data3\\target_BIO_2014_cropus.txt", 'r',encoding = "utf-8") as fr_2:
+	with open(p.PEOPLEDAILY_source_dir, 'r',encoding = "utf-8") as fr_1, \
+			open(p.PEOPLEDAILY_target_dir, 'r',encoding = "utf-8") as fr_2:
 		for sent, target in tqdm(zip(fr_1, fr_2), desc='text_to_id'):
 			chars = sent2char(sent)
 			label = sent2char(target)
 			targets.append(label)
 			sentences.append(chars)
 	train, valid = train_val_split(sentences, targets)
-	with open(args.NER_PEOPLEDAILY_TRAIN, 'w') as fw:
+	with open(p.PEOPLEDAILY_train, 'w') as fw:
 		for sent, label in train:
 			sent = ' '.join([str(w) for w in sent])
 			label = ' '.join([str(l) for l in label])
@@ -231,7 +211,7 @@ def produce_NER_PEOPLE_DAILY_data(stop_word_list=None, vocab_size=None):
 			encode_json = json.dumps(df)
 			print(encode_json, file=fw)
 		logger.info('Train set write done')
-	with open(args.NER_PEOPLEDAILY_VALID, 'w') as fw:
+	with open(p.PEOPLEDAILY_valid, 'w') as fw:
 		for sent, label in valid:
 			sent = ' '.join([str(w) for w in sent])
 			label = ' '.join([str(l) for l in label])
@@ -239,8 +219,49 @@ def produce_NER_PEOPLE_DAILY_data(stop_word_list=None, vocab_size=None):
 			encode_json = json.dumps(df)
 			print(encode_json, file=fw)
 		logger.info('Dev set write done')
-
+def produce_text_summary_data():
+	p = config.Seq2SeqPram()
+	srcs = []
+	tgts = []
+	with open(config.Corpus_Path.textsummary_file, 'r', encoding ="utf-8") as f:
+		for i,line in tqdm(enumerate(f),desc="create textsummary dataset"):
+			pair = json.loads(line)
+			srcs.append(pair["article"])
+			tgts.append(pair['summarization'])
+	train, valid = train_val_split(srcs,tgts )
+	with open(p.train, 'w') as fw:
+		for src, tgt in tqdm(train,desc="write train set"):
+			df = {"src": src, "tgt": tgt}
+			encode_json = json.dumps(df)
+			fw.write(encode_json + "\n")
+		logger.info('Train set write done')
+	with open(p.valid, 'w') as fw:
+		for src, tgt in tqdm(valid,desc="write dev set"):
+			df = {"src": src, "tgt": tgt}
+			encode_json = json.dumps(df)
+			fw.write(encode_json + "\n")
+		logger.info('Dev set write done' )
 
 if __name__ == "__main__":
-
-	produce_PA_structure_data()
+	models = sys.argv[1:]
+	model_func = {
+		"NER":[produce_NER_data,produce_NER_PEOPLE_DAILY_data],
+		"PREDICTRECOGINIZE":produce_predict_seqlabeling_data,
+		"SRL":produce_PA_structure_data,
+		"TEXT_SUMMARY":produce_text_summary_data
+	}
+	for model in models:
+		try:
+			if model == "NER":
+				subset = ["CLUE 2020",'PEOPLE DAILY']
+				for idx,subset in enumerate(subset):
+					logger.info("Start Produce data for model : %s (dataset : %s)"%(model,subset))
+					model_func[model][idx]()
+			else:
+				logger.info("Start Produce data for model : %s" % (model))
+				model_func[model]()
+		except:
+			import traceback
+			print(traceback.format_exc())
+			logger.error("Error! Please Retry")
+		logger.info("Success √")

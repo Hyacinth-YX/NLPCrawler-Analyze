@@ -1,5 +1,9 @@
 /bert_model/
+/backend/
 /DocLabel/
+/embeddings/
+/fine_tuned_model/
+/output/
 /Crawler&Convert/
 /LabelTool/
 /data/

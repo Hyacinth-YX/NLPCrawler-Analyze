@@ -1,11 +1,11 @@
+import sys
+sys.path.append("..")
 import torch
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
-from pytorch_pretrained_bert.tokenization import BertTokenizer
-import config.args as args
+import config as args
 from utils.loggerUtils import *
 from utils.dataprocessUtils import convert_examples_to_features
-
-logger = init_logger("bert_ner",logging_path=args.log_path)
+logger = init_logger("bert_ner", logging_path=args.log_path)
 
 
 def features_2_batch_iter(features,sampler = SequentialSampler,batch_size = 1):
@@ -23,14 +23,14 @@ def features_2_batch_iter(features,sampler = SequentialSampler,batch_size = 1):
     iterator = DataLoader(data, sampler=sampler, batch_size=batch_size)
     return iterator
 
-def create_batch_iter(mode,processor,tokenizer,show_example = True,max_seq2_length = 10):
+def create_batch_iter(mode,processor,tokenizer,show_example = True):
     """构造数据加载迭代"""
     logger.info("加载%s迭代器" % mode)
 
     if mode == "train":
         examples = processor.get_train_examples()
         num_train_steps = int(
-            len(examples) / args.train_batch_size / args.gradient_accumulation_steps * args.num_train_epochs)
+			len(examples) / args.train_batch_size / args.gradient_accumulation_steps * args.num_train_epochs)
         batch_size = args.train_batch_size
         logger.info("  Num steps = %d", num_train_steps)
 
@@ -44,12 +44,11 @@ def create_batch_iter(mode,processor,tokenizer,show_example = True,max_seq2_leng
     label_list = processor.get_labels()
 
     # 特征
-    features = convert_examples_to_features(examples, label_list, args.max_seq_length, tokenizer,show_example,args.max_seq2_length)
-
+    features = convert_examples_to_features(examples, label_list, args.max_seq_length, tokenizer, show_example,
+											args.max_seq2_length)
     logger.info("  Num examples = %d", len(examples))
     logger.info("  Num features = %d", len(features))
     logger.info("  Batch size = %d", batch_size)
-
     if mode == "train":
         sampler = RandomSampler
     elif mode == "dev":

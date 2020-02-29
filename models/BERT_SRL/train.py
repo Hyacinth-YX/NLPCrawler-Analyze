@@ -1,7 +1,8 @@
-import pytorch_pretrained_bert as bert
+import sys
+sys.path.append("../../")
 import torch
-import config.args as args
-from utils.dataprocessUtils import DataProcessor,InputExample
+import config as args
+from utils.dataprocessUtils import DataProcessor,InputExample,load_bert_tokenizer
 from utils.dataloaderUtils import create_batch_iter
 from utils.modelUtils import SeqLabelingTrainer
 from models.Bert_Token_Classfier import Bert_Token_Classfier_Model
@@ -9,8 +10,7 @@ import json
 
 from utils.loggerUtils import init_logger
 
-logger = init_logger("BERT SRL",args.log_path)
-
+logger = init_logger("BERT SRL", args.log_path)
 class SRL_PA(DataProcessor):
 
 	"""将数据构造成example格式"""
@@ -36,11 +36,8 @@ class SRL_PA(DataProcessor):
 		return examples
 	def get_labels(self):
 		return args.SRL_label
-
-tokenizer = bert.BertTokenizer.from_pretrained(args.bert_model_dir)
-
+tokenizer = load_bert_tokenizer()
 data_processor = SRL_PA()
-
 Dev_dataloader  = create_batch_iter(
 	processor = data_processor,
 	tokenizer = tokenizer ,
@@ -55,11 +52,8 @@ Train_dataloader ,num_train_steps = create_batch_iter(
 )
 
 num_label = len(data_processor.get_labels())
-
 model = Bert_Token_Classfier_Model(300,num_label)
-
 loss_weight = torch.FloatTensor([3 for i in range(num_label)]).cuda()
-
 loss_weight[0] = 1
 
 trainner = SeqLabelingTrainer(

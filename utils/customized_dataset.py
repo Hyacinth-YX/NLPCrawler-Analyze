@@ -41,19 +41,19 @@ class IOB(SeqLabeling):
 def create_batch_iter(mode,processor,tokenizer):
 	"""构造迭代器"""
 	if mode == "train":
-		examples = processor.get_train_examples(args.data_dir)
+		examples = processor.get_train_examples(config.data_dir)
 		num_train_steps = int(
-			len(examples) / args.train_batch_size / args.gradient_accumulation_steps * args.num_train_epochs)
-		batch_size = args.train_batch_size
+			len(examples) / config.train_batch_size / config.gradient_accumulation_steps * config.num_train_epochs)
+		batch_size = config.train_batch_size
 		logger.info("  Num steps = %d", num_train_steps)
 	elif mode == "dev":
-		examples = processor.get_dev_examples(args.data_dir)
-		batch_size = args.eval_batch_size
+		examples = processor.get_dev_examples(config.data_dir)
+		batch_size = config.eval_batch_size
 	else:
 		raise ValueError("Invalid mode %s" % mode)
 	label_list = processor.get_labels()
 	# 特征
-	features = convert_examples_to_features(examples, label_list, args.max_seq_length, tokenizer)
+	features = convert_examples_to_features(examples, label_list, config.max_seq_length, tokenizer)
 
 	logger.info("  Num examples = %d", len(examples))
 	logger.info("  Batch size = %d", batch_size)

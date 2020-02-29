@@ -1,35 +1,43 @@
+import sys
+sys.path.append("..")
 import torch
-import json
-import config.args as args
+import config
 import random
-from collections import Counter
 from tqdm import tqdm
-from utils.loggerUtils import init_logger
+from typing import List,Tuple,Dict,Union
+from pytorch_pretrained_bert import BertTokenizer
+from loguru import logger
+def load_sub_vocab():
+	sub_vocab = {}
+	with open(config.ProjectConfiguration.bert_vocab, 'r', encoding="utf-8") as fr:
+		for line in fr:
+			_line = line.strip('\n')
+			if "##" in _line and sub_vocab.get(_line) is None:
+				sub_vocab[_line] = 1
+	return sub_vocab
+def load_bert_tokenizer() -> BertTokenizer:
+	tokenizer = BertTokenizer.from_pretrained(config.ProjectConfiguration.bert_model_dir)
+	return tokenizer
 
-logger = init_logger("bert_ner",logging_path=args.log_path)
-class Normialize:
-	@staticmethod
-	def ChineseChar(char):
-		'''中文字符 转化为 英文字符
-		:param char:
-		:return: normalized_char
-		'''
-		char_replace = {
-			8220: "\"",
-			8221: "\"",
-			8212: "-",
-			8230: "...",
-			8216: "＇",
-			8217: "＇",
-		}
+def parseIOBlabel(labels : List[str]) -> List[Dict]:
 
-		if ord(char) in char_replace:
-			return char_replace[ord(char)]
-		else:
-			return char
+	output = []
+	labels = list(map(lambda x :x.replace("_","-"),labels))
+	for i in range(len(labels)):
 
+		if labels[i].startswith("B-"):
+			span_start = i
+			label = labels[i][2:]
+			span_end = i
+			for j in range(span_start + 1, len(labels)):
+				if labels[j] == "I-" + label:
+					span_end = j
+				if labels[j] == labels[i]:
+					break
+			output.append({label: [span_start, span_end]})
+
+	return output
 class InputExample(object):
-
 	def __init__(self, guid, text_a, text_b=None, label=None):
 		"""创建一个输入实例
 		Args:
@@ -42,6 +50,7 @@ class InputExample(object):
 		self.text_a = text_a
 		self.text_b = text_b
 		self.label = label
+
 class InputFeature(object):
 	def __init__(self, input_ids, input_mask, segment_ids, label_id, output_mask):
 		self.input_ids = input_ids
@@ -49,10 +58,10 @@ class InputFeature(object):
 		self.segment_ids = segment_ids
 		self.label_id = label_id
 		self.output_mask = output_mask
+
 class DataProcessor(object):
 
 	"""数据预处理的基类，自定义的MyPro继承该类"""
-
 	def get_train_examples(self):
 		"""读取训练集 Gets a collection of `InputExample`s for the train set."""
 		raise NotImplementedError()
@@ -73,8 +82,49 @@ class DataProcessor(object):
 				_line = line.strip('\n')
 				lines.append(_line)
 			return lines
+	def __iter__(self):
+		return self
 
-def convert_tokens_to_features(tokens_a,labels,max_seq_length,tokenizer,label_list,sub_vocab,segment_id = 0):
+def tensor2list(cudatensor : torch.tensor) -> List:
+	return list(cudatensor.cpu().numpy())
+class text2TokenClassfierDataProcessor(DataProcessor):
+
+	def __init__(self,lines:Union[List[str],List[Tuple]]):
+		self.lines = lines
+		self.iter_now = 0
+	def _create_example(self,lines:Union[List[str],List[Tuple]],set_type) ->List[InputExample]:
+		examples = []
+		for i, line in enumerate(lines):
+			if line == "":
+				continue
+			guid = "%s-%d" % (set_type, i)
+			assert type(line) in [str,tuple]
+			if type(line) == str:
+				example = InputExample(guid=guid, text_a=line)
+			else:
+				example = InputExample(guid=guid, text_a=line[0],text_b=line[1])
+			examples.append(example)
+		return examples
+
+	def get_dev_examples(self) ->List[InputExample]:
+		examples = self._create_example(self.lines, "test")
+		return examples
+
+	def get_labels(self):
+		return None
+
+	def __iter__(self):
+		return self
+	def __next__(self) -> Tuple[int,InputExample]:
+		if self.iter_now < len(self.lines):
+			example = self._create_example([self.lines[self.iter_now]],"test")[0]
+			self.iter_now += 1
+			return self.iter_now - 1,example
+		else:
+			raise StopIteration
+def convert_tokens_to_features(
+		tokens_a,labels,max_seq_length,tokenizer,label_list,sub_vocab,segment_id = 0)\
+		-> Tuple[List[str],List[int],List[int],List[int],List[int],List[int]]:
 
 	if labels == None:
 		labels = " ".join(["-1"] * len(tokens_a))
@@ -123,9 +173,11 @@ def convert_tokens_to_features(tokens_a,labels,max_seq_length,tokenizer,label_li
 	assert len(output_mask) == max_seq_length
 
 	return tokens,label_id,input_ids,input_mask,segment_ids,output_mask
-def convert_examples_to_features(examples, label_list, max_seq_length, tokenizer,show_example,max_seq2_length = 10):
-	'''
+def convert_examples_to_features(
+		examples : List[InputExample], label_list, max_seq_length, tokenizer,show_example,max_seq2_length = 10)\
+		-> List[InputFeature]:
 
+	'''
 	:param examples:
 	:param label_list: 如果没有对应的序列标签,那么设置label_list = None
 	:param max_seq_length:
@@ -133,14 +185,7 @@ def convert_examples_to_features(examples, label_list, max_seq_length, tokenizer
 	:return:
 	'''
 	# 标签转换为数字
-
-	sub_vocab = {}
-	with open(args.VOCAB_FILE, 'r', encoding="utf-8") as fr:
-		for line in fr:
-			_line = line.strip('\n')
-			if "##" in _line and sub_vocab.get(_line) is None:
-				sub_vocab[_line] = 1
-
+	sub_vocab = load_sub_vocab()
 	features = []
 	for ex_index, example in enumerate(examples):
 		tokens_a = tokenizer.tokenize(example.text_a)
@@ -192,7 +237,7 @@ def convert_examples_to_features(examples, label_list, max_seq_length, tokenizer
 		if ex_index < 1 and show_example :
 			logger.info("-----------------Example-----------------")
 			logger.info("guid: %s" % (example.guid))
-			logger.info("tokens: %s" % " ".join([str(x) for x in tokens]))
+			logger.info("tokens: %s" % " ".join([str(x) for x in tokens]) + "len: %d"%len(tokens))
 			logger.info("input_ids: %s" % " ".join([str(x) for x in input_ids]))
 			logger.info("input_mask: %s" % " ".join([str(x) for x in input_mask]))
 			logger.info("segment ids: %s " % " ".join([str(x) for x in segment_ids]))
@@ -208,8 +253,7 @@ def convert_examples_to_features(examples, label_list, max_seq_length, tokenizer
 		features.append(feature)
 
 	return features
-
-def train_val_split(X, y, valid_size=0.2, random_state=2018, shuffle=True):
+def train_val_split(X, y, valid_size=0.2, random_state=2018, shuffle=True)-> Tuple[List,List]:
 	"""
 	训练集验证集分割
 	:param X: sentences

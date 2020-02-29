@@ -310,21 +310,16 @@ class IO(metaclass = abc.ABCMeta):
 
 	@abc.abstractmethod
 	def __call__(self, *args, **kwargs):
-
 		pass
 
 	@staticmethod
 	def loadJson(path):
-
 		with open(path, "r", encoding="utf-8") as f:
-
 			return  json.loads(f.read())
 
 	@staticmethod
 	def saveJson(path,value):
-
 		with open(path, "w", encoding="utf-8") as f:
-
 			f.write(json.dumps(value))
 
 	@staticmethod

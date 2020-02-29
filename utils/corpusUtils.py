@@ -4,38 +4,19 @@
 @author : ljc
 2020-02-20
 '''
-
-from config.args import *
+import sys
+sys.path.append("..")
 from utils.loggerUtils import init_logger
 import os
 import json
 import re
 from bs4 import BeautifulSoup
-logger = init_logger("corpus process",log_path)
+import config
+import numpy as np
 from loguru import logger as ConsoleLogger
-def load_seq(index=0, withlabel=False):
-
-	files = os.listdir("DocSequences")
-
-	for file in files:
-
-		if file.startswith("[{}]".format(index + 1)):
-
-			with open("DocSequences/" + file) as f:
-
-				seq = json.loads(f.read())
-
-			if withlabel == True:
-
-				with open("DocLabel2/" + file) as f:
-
-					label = json.loads(f.read())
-
-				return (seq, label)
-
-			else:
-
-				return seq
+corpus_param = config.Corpus_Path()
+p = config.ProjectConfiguration()
+logger = init_logger("corpus process",p.log_path)
 def split(seq, label):
 	'''按句号分割'''
 	sentences = []
@@ -43,18 +24,12 @@ def split(seq, label):
 	this_sentence = []
 	this_label = []
 	for i in range(len(seq)):
-
 		if seq[i] == "。":
 			sentences.append(this_sentence)
-
 			labels.append(this_label)
-
 			this_sentence = []
-
 			this_label = []
-
 		this_sentence.append(seq[i])
-
 		this_label.append(label[i])
 	return sentences, labels
 def extract(func):
@@ -356,11 +331,9 @@ class Extract_Information_By_Re:
 
 		return list(map(lambda label: Extract_Information_By_Re.labels.index(label), labels))
 
-
 class CTB:
-
 	def __init__(self,version = 7, load_pos = False,load_parsetree = False,load_cpb = False):
-		CTB_dir = CTB7_dir if version == 7 else CTB9_dir
+		CTB_dir = corpus_param.CTB7_dir if version == 7 else corpus_param.CTB9_dir
 		self.parse_tree_dir = CTB_dir + "bracketed/"
 		self.postag_dir = CTB_dir + "postagged/"
 		self.raw_dir = CTB_dir + "raw/"
@@ -381,7 +354,6 @@ class CTB:
 				selection()
 
 		ConsoleLogger.info("读取CTP success!")
-
 	@staticmethod
 	def AddSemanticLabel_toCTBfile(file , ):
 		pass
@@ -392,84 +364,50 @@ class CTB:
 		:return:
 		'''
 		ConsoleLogger.debug("加载CPB语义标签...")
-
-		with open(CPB_verb_file,encoding = "utf-8-sig") as f:
-
+		with open(corpus_param.CPB_verb_file,encoding = "utf-8-sig") as f:
 			verb_predict_data = f.read().split("\n")
-
 		last_field = None
-
 		count = 0
-
 		error = 0
-
 		valid = 0
-
 		for idx,verb_predict in enumerate(verb_predict_data):
-
 			fields_values = verb_predict.split(" ")
 			try:
-
 				file_name,sent_idx,predict_idx,tagger,word_frameid = fields_values[:5]
-
 			except:
-
 				continue
 			sent_idx = int(sent_idx)
-
 			if file_name == "chtb_0112.nw" :
-
 				if  sent_idx >= 10 or sent_idx in [3,4,5,6,7,8] or (sent_idx == 9 and (int(predict_idx) >= 14 or "取决于"in word_frameid) ):
-
 					sent_idx = sent_idx - 1
 			if file_name == "chtb_0139.nw":
-
 				if sent_idx >= 10 or sent_idx in [4,5,6,7,8,9]:
-
 					sent_idx = sent_idx - 1
 			if file_name == "chtb_0307.nw":
-
 				if sent_idx in [1]:
-
 					sent_idx = sent_idx - 1
-
 				if sent_idx >= 8 or sent_idx in [4,5,6,7]:
-
 					sent_idx  = sent_idx - 2
 			if  file_name == "chtb_0437.nw":
-
 				if  sent_idx >= 3:
-
 						sent_idx -=1
 			if file_name == "chtb_0672.nw":
-
 				if sent_idx >= 10 or sent_idx >= 3:
-
 					sent_idx -= 1
 			if file_name == "chtb_0733.nw":
-
 				if sent_idx >= 4 :
-
 					sent_idx -= 1
 			if file_name == "chtb_0787.nw":
-
 				if sent_idx >= 3 :
-
 					sent_idx -= 1
 			if file_name == "chtb_0792.nw" or file_name == "chtb_0793.nw":
-
 				if sent_idx >= 3 :
-
 					sent_idx -= 1
 			if file_name == "chtb_0794.nw"  :
-
 				if sent_idx >= 2 :
-
 					sent_idx -= 1
 			if file_name == "chtb_0828.nw"  or file_name == "chtb_0845.nw" or file_name == "chtb_0855.nw" :
-
 				if sent_idx >= 2 :
-
 					sent_idx -= 1
 			if file_name == "chtb_0877.nw":
 				if sent_idx >= 5:
@@ -477,63 +415,43 @@ class CTB:
 			if file_name == "chtb_1042.mz":
 				if sent_idx >= 100:
 					sent_idx -=1
-
 			predict_idx = int(predict_idx)
-
 			predict,frame_id = word_frameid.split(".")
-
 			def error_check():
-
 				print("No predict")
-
 				print("cpb:",predict,"terminal:",terminal)
-
 				print(file_name,sent_idx,predict_idx)
-
 				for i in range(sent_idx -2 ,sent_idx + 2):
 					print("--------------",i)
-
 					print([str(idx) + "." + label for idx,label in enumerate(self.files[file_name].sents[i]["parseTree"].terminals)])
 				exit()
-
 			try:
 				file_sent = self.files[file_name].sents[sent_idx]
-
 				sent_terminals = [str(idx) + "." + label for idx, label in enumerate(file_sent["parseTree"].terminals)]
-
 				terminal = sent_terminals[predict_idx]
-
 				if predict in terminal:
-
 					args = dict(["-".join(arg.split("-")[1:]), arg.split("-")[0]] for arg in fields_values[6:])
-
 					self.files[file_name].sents[sent_idx]["PA-structure"].append(
-
 						{
 							"predict": predict_idx,
 							"predict_type": "verb",
 							"args": args
 						}
 					)
-
 					valid += 1
-
 				else:
-
 					if last_field[-1].split(".")[0] == predict:
 						continue
 					error += 1
 					#error_check()
-
 			except:
 				error += 1
 				#error_check()
-
 			last_field = [file_name, sent_idx, tagger, word_frameid]
 			count += 1
 		ConsoleLogger.debug("读入 {}/{} Verb-Argument".format(valid,count))
 		ConsoleLogger.error("----> : %d Predict-Argument MisMatch Parse Tree" % error)
-		with open(CPB_nouns_file,encoding = "utf-8-sig") as f:
+		with open(corpus_param.CPB_nouns_file,encoding = "utf-8-sig") as f:
 			verb_predict_data = f.read().split("\n")
 		last_field = None
 		count = 0
@@ -634,7 +552,6 @@ class CTB:
 class ctb_file:
 
 	__class__ = "CTB File"
-
 	def __init__(self,name,segement_dir):
 		with open(segement_dir + name + ".seg",encoding = "utf-8") as f:
 			self.segemented = f.read()
@@ -670,11 +587,9 @@ class ctb_file:
 		for idx ,sent in enumerate(tree.find_all("s")):
 			self.sents[idx]["parseTree"] = parseTree(sent.text)
 
-
 class parseTree:
 
 	def __init__(self,bracketContent):
-
 		'''
 		:param bracketContent: 带有括号的
 		'''
@@ -701,9 +616,7 @@ class parseTree:
 					self.rootNode = getNodeByindex[idx]
 
 				bracket_stack.append([idx, char])
-
 			if char == ")":
-
 				'''如果遇到右括号 左括号出栈'''
 				matched_left_bracket = bracket_stack.pop(-1)
 				matched_left_bracket_idx = int(matched_left_bracket[0])
@@ -711,37 +624,22 @@ class parseTree:
 				if this_node.content == None:
 					this_node.content = bracketContent[matched_left_bracket_idx + 1 : idx]
 					self.terminalNodes.append(this_node)
-
 		self.terminals = [node.content for node in self.terminalNodes]
-
 class parseTreeNode:
 
 	def __init__(self,content = None,parent = None,sons = []):
-
 		self.content = content
-
 		self.parent = parent
-
 		self.sons = sons
-
 if __name__ == "__main__":
 
 	corpus = CTB(load_cpb=True, version="9")
-
 	file = list(corpus.files.values())[0]
-
 	print(type(file))
-
 	for sent in file.sents:
-
 		print("".join(sent["seg"]))
-
 		PAs = sent["PA-structure"]
-
 		terminals = sent["parseTree"].terminals
-
 		for PA in PAs:
-
 			print("predict",terminals[PA["predict"]])
-
 			print("args",PA["args"])
