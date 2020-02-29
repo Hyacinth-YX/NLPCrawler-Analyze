@@ -39,6 +39,7 @@ if __name__ == "__main__":
 		env_prefix = "conda activate %s & " % args.env
 	else:
 		env_prefix = ""
+	print(env_prefix)
 	if args.p != []:
 		modelNames = [model.upper() for model in args.p]
 		subprocess.call(env_prefix + "python produce_data.py " + " ".join(modelNames),

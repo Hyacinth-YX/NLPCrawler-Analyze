@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15e86fae-04a2-4eac-b46d-e56b19d95c33" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawler&amp;Convert/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawler&amp;Convert/pdf2txt.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawler&amp;Convert/pdfURLs.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawler&amp;Convert/text_urls.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/args.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_preprocess/produce_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preprocess/produce_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/all.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/BERT_NER/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/BERT_NER/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/BERT_PredictLabeling/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/BERT_PredictLabeling/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/BERT_PredictLabeling2/train.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/BERT_SRL/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/BERT_SRL/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Bert_Token_Classfier.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/Bert_Token_Classfier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/corpusUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/corpusUtils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/customized_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/customized_dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/dataloaderUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/dataloaderUtils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/dataprocessUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/dataprocessUtils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/loggerUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/loggerUtils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/modelUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/modelUtils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/otherUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/otherUtils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/visualizeUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/visualizeUtils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,29 +75,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/Miniconda3/envs/skydownacai/Lib/site-packages/jieba/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="299" selection-start-line="299" selection-end-line="299" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Bert_Token_Classfier.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="247">
+              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -128,32 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/pointer_network.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="400" column="8" selection-start-line="400" selection-start-column="8" selection-end-line="400" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1463">
+              <caret line="77" column="6" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -262,11 +194,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="607" />
-    <option name="y" value="62" />
-    <option name="width" value="1555" />
-    <option name="height" value="840" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="862" />
+    <option name="y" value="110" />
+    <option name="width" value="983" />
+    <option name="height" value="1104" />
   </component>
   <component name="ProjectId" id="1XktQ6HcvbjVcboDN7xwRRtsx0n" />
   <component name="ProjectView">
@@ -274,7 +206,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -285,17 +216,13 @@
             <path>
               <item name="NLP_PROJECT" type="b2602c69:ProjectViewProjectNode" />
               <item name="NLP_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NLP_PROJECT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NLP_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="config.py" type="8704e2dd:PyFileNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -495,7 +422,8 @@
       <workItem from="1582907305484" duration="606000" />
       <workItem from="1582911290652" duration="1064000" />
       <workItem from="1582952546652" duration="7882000" />
-      <workItem from="1582960931396" duration="13081000" />
+      <workItem from="1582960931396" duration="13389000" />
+      <workItem from="1582975715881" duration="292000" />
     </task>
     <task id="LOCAL-00001" summary="改进pdf2txt，改进换行方式，判断title适当增加换行。但是还有脚注处理办法没有想到">
       <created>1580646813325</created>
@@ -508,7 +436,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="457807000" />
+    <option name="totallyTimeSpent" value="458407000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -520,10 +448,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="690" y="88" width="786" height="883" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6791045" visible="true" weight="0.2707775" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6791045" visible="true" weight="0.5714286" />
       <window_info id="Structure" order="1" sideWeight="0.32089552" side_tool="true" weight="0.2707775" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -537,14 +464,14 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Statistic" order="10" weight="0.3186969" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.398017" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.25166446" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.08847185" side_tool="true" weight="0.13314448" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.33002833" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" auto_hide="true" x="605" y="185" width="326" height="453" id="SciView" order="3" show_stripe_button="false" type="FLOATING" weight="0.21849866" />
-      <window_info anchor="right" id="Json Parser" order="4" visible="true" weight="0.02010724" />
+      <window_info anchor="right" id="Json Parser" order="4" visible="true" weight="0.041208792" />
       <window_info anchor="right" id="Database" order="5" weight="0.02010724" />
     </layout>
     <layout-to-restore>
@@ -667,11 +594,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/render.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-912" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/render.html" />
     <entry file="file://$PROJECT_DIR$/render.html" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/BvSshSftp/Bv000ff1/Bv0057d0/summarize.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/BvSshSftp/Bv000ff1/Bv005887/summarize.py" />
@@ -817,25 +740,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/text_summary/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/models/text_summary/train.py" />
+    <entry file="file://$PROJECT_DIR$/model.py" />
     <entry file="file://$PROJECT_DIR$/utils/modelUtils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -890,13 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Miniconda3/envs/skydownacai/Lib/site-packages/jieba/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="299" selection-start-line="299" selection-end-line="299" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/runTextSummary.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="912">
@@ -911,13 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-column="193" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
@@ -951,10 +843,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/Miniconda3/envs/skydownacai/Lib/site-packages/jieba/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="299" selection-start-line="299" selection-end-line="299" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="247">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1463">
+          <caret line="77" column="6" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
         </state>
       </provider>
     </entry>

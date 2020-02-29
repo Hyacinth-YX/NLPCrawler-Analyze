@@ -3,10 +3,12 @@
 /DocLabel/
 /embeddings/
 /fine_tuned_model/
-/output/
 /Crawler&Convert/
 /LabelTool/
 /data/
 **/cached
 *.pdf
+*.txt
 /temp/
+/logs/
+/tools/
