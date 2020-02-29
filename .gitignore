@@ -8,7 +8,6 @@
 /data/
 **/cached
 *.pdf
-*.txt
 /temp/
 /logs/
 /tools/
